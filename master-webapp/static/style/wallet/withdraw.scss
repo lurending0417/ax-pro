@@ -1,0 +1,80 @@
+.withdraw {
+    height: 100%;
+    background: #FFF;
+
+    .withdraw-top {
+        height: 2.5rem;
+        width: 100%;
+        background: #4A4A4A;
+        font-size: 0.85rem;
+        padding-top: 0.4rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .withdraw-middle {
+        width: 100%;
+        height: 6.1rem;
+        background: #FFF;
+
+        .middle-title {
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+        }
+        .withdraw-amount-box {
+            position: relative;
+            width: 18rem;
+            height: 2.3rem;
+            margin-left: 0.75rem;
+            border-bottom: 1px solid #E0E0E0;
+
+            div {
+                top: -0.5rem;
+                height: 3.4rem;
+                position: absolute;
+                font-size: 2.2rem;
+            }
+
+            .withdraw-amount {
+                width: 100%;
+                height: 2.3rem;
+                border: none;
+                caret-color: #CF9F41;
+                font-size: 1.7rem;
+                padding-left: 1.5rem;
+            }
+        }
+
+        .withdraw-all {
+            text-align: right;
+            margin-right: 0.75rem;
+            line-height: 2.25rem;
+            font-size: 0.75rem;
+        }
+
+    }
+
+    .withdraw-bottom {
+        font-size: 0.7rem;
+        padding: 0.75rem;
+        background: #FFF;
+
+        .withdraw-rule-title {
+            font-weight: bold;
+        }
+
+        .bottom-button {
+            width: 9.25rem;
+            height: 2.25rem;
+            line-height: 2.25rem;
+            position: absolute;
+            bottom: 0.75rem;
+            left: 4.75rem;
+            text-align: center;
+            color: #FFF;
+            background: #CF9F41;
+            border-radius: 0.2rem;
+        }
+    }
+
+}

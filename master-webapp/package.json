@@ -1,0 +1,57 @@
+{
+    "name": "test",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@zeit/next-sass": "^0.2.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "babel-plugin-transform-decorators-legacy": "^1.3.5",
+        "china-area-data": "^4.0.0",
+        "cross-env": "^5.2.0",
+        "file-loader": "^2.0.0",
+        "glob": "^7.1.2",
+        "light7": "^0.4.3",
+        "md5": "^2.2.1",
+        "mobx": "4.3.2",
+        "mobx-persist": "^0.4.1",
+        "mobx-react": "^5.2.5",
+        "mockjs": "^1.0.1-beta3",
+        "moment": "^2.22.2",
+        "next": "^6.1.1",
+        "node-sass": "^4.9.3",
+        "prop-types": "^15.6.2",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2",
+        "react-mixin": "^4.0.0",
+        "react-router-dom": "^4.3.1",
+        "react-timer-mixin": "^0.13.4",
+        "request": "^2.88.0",
+        "svg-react-loader": "^0.4.6",
+        "url-loader": "^1.1.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.6",
+        "eslint": "^5.4.0",
+        "eslint-plugin-react": "^7.11.1",
+        "pre-commit": "^1.2.2"
+    },
+    "pre-commit": [
+        "lint"
+    ],
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development  && next",
+        "test": "cross-env NODE_ENV=production  && next -p 2000",
+        "build": "next build",
+        "start": "next start -p 2000",
+        "start-prod2": "pm2 start ./node_modules/next/dist/bin/next-start -p 2002 -h localhost",
+        "lint": "node node_modules/eslint/bin/eslint.js --ext .js -c .eslintrc.js pages --fix"
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8",
+        "iOS >= 6",
+        "Android > 4.1",
+        "Firefox > 20"
+    ]
+}

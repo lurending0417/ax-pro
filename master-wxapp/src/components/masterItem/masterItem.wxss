@@ -1,0 +1,65 @@
+.master-item-wrap{
+	width: 690rpx;
+	margin: 20rpx auto 0;
+	box-sizing: border-box;
+	border: 2rpx solid #CDCDCD;
+	border-radius: 20rpx;
+	background-color: #FCFCFC;
+}
+.header-wrap{
+	display: flex;
+	align-items: center;
+	padding:20rpx;
+}
+.detail-wrap{
+	flex-grow: 1;
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.detail-wrap .title{
+	font-size: 32rpx;
+	color: #2B2B2E;
+	font-weight: bold;
+}
+.detail-wrap .star image{
+	width: 30rpx;
+	height: 30rpx;
+	margin-right: 8rpx;
+}
+.concern-wrap{
+	color: #CF9F41;
+	font-size: 28rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.concern-btn{
+	font-size: 28rpx;
+	color: #CF9F41;
+	width: 170rpx;
+	height: 64rpx;
+	line-height: 64rpx;
+	text-align: center;
+	box-sizing: border-box;
+	border-radius: 32rpx;
+	border: 2rpx solid #CF9F41;
+	background-color: #fff;
+	outline: none;
+}
+.content-wrap{
+	padding: 0 10rpx;
+	font-size: 30rpx;
+	color:#2B2B2E;
+	line-height: 1.5em;
+}
+.footer-wrap{
+	padding: 20rpx 20rpx 10rpx;
+	color: #9B9B9B;
+	font-size: 28rpx;
+	display: flex;
+}
+.tag-item{
+	margin-right: 26rpx;
+}

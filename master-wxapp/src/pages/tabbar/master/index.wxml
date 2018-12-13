@@ -1,0 +1,44 @@
+<view class='container'>
+	<topNav bindchangeTab="refreshList" categoryList="{{categoryList}}" chooseCategoryIndex="{{chooseCategoryIndex}}"/>
+
+	<view wx:if="{{rows.length > 0}}">
+		<view class="refresh-hidden">
+			<refresh showLoading="{{showLoadingRefresh}}"></refresh>
+		</view>
+		<view wx:for="{{rows}}" wx:key="{{item.id}}" >
+			<masterItem master="{{item}}"/>
+		</view>
+		<more showLoading="{{showLoadingMore}}" wx:if="{{showFooter}}"></more>
+	</view>
+
+	<view wx:else>
+		<placeholder></placeholder>
+	</view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- index.wxml -->
+<!-- <scroll-view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{avatar}}" />
+    <text>{{nickname}}</text>
+  </view>
+   <van-cell-group>
+    <van-cell data-item="{{item}}" bind:click="itemClick" wx:key="{{item.href}}" wx:for="{{list}}" wx:for-item="item" title="{{item.name}}"></van-cell>
+  </van-cell-group>
+</scroll-view> -->
+<!-- <web-view src="https://m.9999ax.com/index/master"></web-view> -->

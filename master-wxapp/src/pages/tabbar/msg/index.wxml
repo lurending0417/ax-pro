@@ -1,0 +1,9 @@
+<view class="container">
+  <view bind:tap="itemClick" data-item="{{item}}" class="msg-cell-item" wx:for="{{list}}" wx:for-item="item" wx:key="tag">
+    <image class="icon" src="{{item.icon}}" />
+    <text class="title">{{item.name}}</text>
+    <view wx:if="{{count[item.tag]>0}}" class="msg-badge"></view>
+    <text wx:if="{{count[item.tag]>0}}" class="desc">你有新消息了</text>
+    <image class="icon-right" src="/assets/imgs/icon/icon-next.png"></image>
+  </view>
+</view>

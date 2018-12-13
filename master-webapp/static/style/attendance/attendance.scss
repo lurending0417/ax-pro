@@ -1,0 +1,144 @@
+.atten_container::-webkit-scrollbar{
+  background: transparent;
+  width:0px;
+}
+.atten_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: auto;
+  .atten-top-bg{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    img{
+      width:100%;
+      height: auto;
+    }
+  }
+}
+.plan_container {
+  display: flex;
+  margin-top: -0.8rem;
+  .atten-top-bg{
+    width:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+    img{
+      width:100%;
+      height: auto;
+    }
+  }
+}
+.plan {
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+  flex: 1;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: white;
+  padding: 0.5rem 0.75rem;
+}
+.plan_bottom_radius {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.plan_row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.plan_title {
+  color: #2B2B2E;
+  font-weight: bold;
+  text-align: center;
+}
+.plan_detail {
+  color: #9B9B9B;
+  position: absolute;
+  right: 0.5rem;
+  text-align: right;
+}
+.plan_money {
+  color: #FFB336;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.plan_money_ct {
+  color: #2B2B2E;
+  font-size: 0.85rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+}
+.plan_mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.plan_mid_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plan_mid_title {
+  font-size: 1rem;
+  color: #2B2B2E;
+  font-weight: bold;
+}
+.plan_mid_detail {
+  color: #9B9B9B;
+  font-size: 0.7rem;
+}
+.plan_process {
+  height: 1rem;
+  border-radius: 0.25rem;
+  background-color: #E7E7E7;
+  margin: 0.25rem 0rem 0.5rem 0rem;
+}
+.plan_process_gold {
+  z-index: 1000;
+  background-color: #FFB336;
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+.plan_process_yellow {
+  background-color: #FFEE18;
+  z-index: 999;
+  height: 1rem;
+  border-radius: 0.25rem;
+}
+.plan_bottom {
+  color: #4A90E2;
+  display: flex;
+  font-size: 0.75rem;
+  text-decoration: underline;
+}
+.plan_badge {
+  position: absolute;
+  top: -0.3rem;
+  right: -2rem;
+  background-color: #4A90E2;
+  height: 0.7rem;
+  font-size: 0.55rem;
+
+  color: white;
+  border-radius: 0.35rem;
+  padding: 0 0.35rem;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,40 @@
+/**font-size*/
+$title-font-size-g: .85rem !global;
+$subtitle-font-size-g: .8rem !global;
+$normal-font-size-g: .75rem !global;
+$small-font-size-g: .7rem !global;
+
+/**主色*/
+$main-color-1-g: #4A4A4A !global;
+$main-color-2-g: #CF9F41 !global;
+
+/**辅色*/
+$second-color-1-g: #6176A0 !global;
+$second-color-2-g: #E1273E !global;
+
+/**button*/
+$btn-border-width-g: .05rem !global;
+$btn-border-color-g: #E0E0E0 !global;
+$btn-base-color-g: #FCFCFC !global;
+
+/**shadow*/
+$shadow-base-color-g: #F8F8F8 !global;
+$shadow-base-height-g: 1rem !global;
+
+//fs
+$fs-color-gray:#9b9b9b;
+$fs-color-bold:#2B2B2E;
+$fs-color-blue:#6176A0;
+
+/** border color*/
+$border-color:#e0e0e0;
+$hr-line-color:rgba(231, 231, 231, 0.5);
+
+
+/* function */
+@mixin bgImg2Or3($url){
+    background-image: url($url + "@2x.png");
+    @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+        background-image: url($url + "@3x.png")
+    }
+}

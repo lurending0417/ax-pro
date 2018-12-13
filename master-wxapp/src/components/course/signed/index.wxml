@@ -1,0 +1,40 @@
+<view class="{{hasTitle ? 'plan_container' : ''}}">
+    <view bind:tap="onTap2" wx:if="{{hasTitle}}" class="atten-top-bg">
+        <image mode="widthFix" src="/assets/imgs/attendance/entrance@3x.png"></image>
+    </view>
+    <view bind:tap="toSign" class="plan plan_bottom_radius">
+        <view class="plan_row">
+            <text class="plan_title fs-max">喔喔奖学金</text>
+            <text class="plan_detail fs-small">查看详情</text>
+        </view>
+        <view class="plan_money_ct fs-max">
+            剩余签到
+            <view class="plan_money">{{total-checked-helped}}</view>
+            天
+        </view>
+        <view class="plan_mid">
+            <view class="plan_mid_item">
+                <view class="plan_mid_title">{{checked}}</view>
+                <view class="plan_mid_detail">自己签到</view>
+            </view>
+            <view class="plan_mid_item">
+                <view class="plan_mid_title">{{helped}}</view>
+                <view class="plan_mid_detail">朋友助力</view>
+            </view>
+            <view class="plan_mid_item">
+                <view class="plan_mid_title">{{prog}}%</view>
+                <view class="plan_mid_detail">总进度</view>
+            </view>
+        </view>
+        <progress backgroundColor="#e7e7e7" stroke-width="15" class="plan_process" percent="prog" activeColor="#ffb336" />
+        <view class="plan_row">
+            <view class="fs-small">{{studied?'今日学习已经完成':'今日学习未完成，快去吧'}}</view>
+        </view>
+        <view wx:if="{{!hasTitle}}" class="plan_row">
+            <view style="position:relative;">
+                <view class="plan_bottom">助力达人榜</view>
+                <view class="plan_badge">￥300</view>
+            </view>
+        </view>
+    </view>
+</view>

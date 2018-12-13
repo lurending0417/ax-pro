@@ -1,0 +1,16 @@
+.pull-to-more {
+    width: 20rem;
+    height: 3.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.fs-small {
+    font-size: .7rem;
+}
+
+.fs-gray {
+    color: #9B9B9B !important;
+}

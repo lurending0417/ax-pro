@@ -1,0 +1,11 @@
+<!-- index.wxml -->
+<!-- <scroll-view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{avatar}}" />
+    <text>{{nickname}}</text>
+  </view>
+  <van-cell-group>
+    <van-cell data-item="{{item}}" bind:click="itemClick" wx:key="{{item.href}}" wx:for="{{list}}" wx:for-item="item" title="{{item.name}}"></van-cell>
+  </van-cell-group>
+</scroll-view> -->
+<web-view src="{{url}}"></web-view>

@@ -1,0 +1,22 @@
+<!-- logs.wxml -->
+<view class="container">
+  <easy-form fields="{{fields}}" api="" saveText="上传荣誉" />
+  <van-toast id="van-toast" />
+  <!-- <van-cell-group>
+    <block wx:for="{{fields}}" wx:for-item="field">
+      <van-cell wx:if="{{field.type=='date'}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}">
+        <picker mode="date" value="{{selCert[field.dataIndex]}}" start="1870-01-01" end="2018-09-01" bindchange="bindDateChange">
+          <view class="picker-label">{{field.label}}</view>
+          <view class="picker-input">{{selCert[field.dataIndex]}}</view>
+        </picker>
+      </van-cell>
+      <van-cell wx:elif="{{field.type=='upload'}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}">
+        <view class="picker-label">{{field.label}}</view>
+        <picker-img class="picker-input" />
+      </van-cell>
+      <van-field wx:else value="{{  selCert[field.dataIndex] }}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}"></van-field>
+    </block>
+  </van-cell-group>
+  <button class="btn" type="primary" bindtap="toGenerate">上传荣誉</button>
+  <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="scaleToFill" src="https://b-ssl.duitang.com/uploads/item/201604/11/20160411125021_3ZWYK.jpeg"></image> -->
+</view>

@@ -1,0 +1,7 @@
+<view  class="home-course-banner theme-radius">
+    <image mode="widthFix" src="{{src}}" style="border-radius: {{status === 'HOME' ? '0.5rem' : '0rem'}}" />
+    <view wx:if="{{tagCls}}" class="tag {{tagCls}}">
+        <text>{{tagTxt}}</text>
+    </view>
+    <text class="home-course-time btn-cycle" hidden="{{status === 'HOME'}}">{{timeText}}</text>
+</view>

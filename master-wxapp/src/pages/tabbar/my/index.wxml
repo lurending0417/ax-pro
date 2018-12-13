@@ -1,0 +1,39 @@
+<view class="container">
+  <view class="my-user-info">
+    <view class="user-icon">
+      <image src="{{userInfo.avatar}}" class="avatar">
+        <image wx:if="{{userInfo.master}}" src="/assets/imgs/icon/icon_medal@2x.png" class="master-confirm-icon" />
+        <image wx:elif="{{userInfo.vip}}" src="/assets/imgs/icon/icon_user_vip@2x.png" class="master-confirm-icon" />
+      </image>
+    </view>
+    <view>
+      <view class="my-name">{{userInfo.nick}}</view>
+      <view wx:if="{{userInfo.master}}" class="ma_stars">
+        <image wx:for="{{userInfo.scores}}" src="/assets/imgs/icon/icon_star_tint@3x.png" class="ma_star" />
+      </view>
+      <view wx:if="{{!userInfo.vip}}" class="my-member fs-gold" bind:tap="openVip">开通超值会员</view>
+      <view wx:else class="my-member fs-gold">会员</view>
+    </view>
+    <view href="/setting/user" bind:tap="toSetting" class="my-setting">
+      <text class="my-wallet-text">设置</text>
+      <image class="icon-right" src="/assets/imgs/icon/icon-next.png"></image>
+    </view>
+  </view>
+  <view class="theme-space"></view>
+  <view class="my-wallet-invite-box">
+    <view class="my-wallet-box " bind:tap="toWallet">
+      <image src="/assets/imgs/my/my-icon-wallet.png" />
+      <text class="my-wallet-text">钱包</text>
+    </view>
+    <view class="my-wallet-box" bind:tap="toInvite">
+      <image src="/assets/imgs/my/my-icon-invite.png" />
+      <text class="my-wallet-text">邀请</text>
+    </view>
+  </view>
+  <view class="theme-space"></view>
+  <van-cell-group>
+    <van-cell data-item="{{item}}" bind:click="itemClick" wx:key="{{item.href}}" wx:for="{{list}}" wx:for-item="item" title="{{item.name}}">
+      <image slot="icon" class="icon" src="{{item.icon}}" />
+    </van-cell>
+  </van-cell-group>
+</view>

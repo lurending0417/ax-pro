@@ -1,0 +1,7 @@
+<view class="pull-to-more">
+  <van-loading wx:if="{{showLoading}}" type="spinner" />
+  <view style="display:flex;" wx:else>
+    <van-icon size="20px" name="upgrade" />
+    <text style="margin-left:15px;" class="fs-gray fs-small">加载更多</text>
+  </view>
+</view>

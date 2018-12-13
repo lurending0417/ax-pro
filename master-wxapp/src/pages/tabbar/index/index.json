@@ -1,0 +1,18 @@
+{
+  "usingComponents": {
+    "texter": "../../components/test/text1",
+    "dialog": "../../components/dialog/dialog",
+    "home_header": "/src/components/home/index",
+    "writeItem": "../../components/writeItem/index",
+    "van-cell": "/src/ui/vant-weapp/cell/index",
+    "van-cell-group": "/src/ui/vant-weapp/cell-group/index",
+    "van-search": "/src/ui/vant-weapp/search/index",
+    "van-button": "/src/ui/vant-weapp/button/index",
+    "van-radio": "/src/ui/vant-weapp/radio/index",
+    "user-info": "/src/components/common/userInfo/index",
+    "van-item": "/src/components/common/item/index",
+    "van-course": "/src/components/course/courseItem/index",
+    "van-radio": "/src/ui/vant-weapp/radio/index"
+  },
+  "navigationBarTitleText": "喔喔百家"
+}

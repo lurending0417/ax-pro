@@ -1,0 +1,182 @@
+//font
+@import "../../node_modules/font-awesome/css/font-awesome.css";
+
+//common css
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+address, cite, dfn, em, var {
+	font-style: normal;
+}
+
+code, kbd, pre, samp {
+	font-family: couriernew, courier, monospace;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+a.button,li a{
+	color: #666;
+}
+
+div p{
+	margin: 5px 0;
+}
+
+sup {
+	vertical-align: text-top;
+}
+
+sub {
+	vertical-align: text-bottom;
+}
+
+legend {
+	color: #000;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+img {
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+strong{
+	font-weight: normal;
+	font-size: 14px;
+}
+
+// customize
+$main-color-g: #409EFF!global;
+
+
+.text_center {
+	text-align: center;
+}
+
+.text_right {
+	text-align: right;
+}
+
+.text_white {
+	color: white;
+}
+
+.icon_hover:hover{
+	cursor: pointer;
+}
+
+.main_bg_color {
+	background-color: $main-color-g;
+}
+
+@function get-margin($width) {
+	@return $width px;
+}
+
+
+.m-l-s{
+	margin-left: 10px;
+}
+.m-r-s{
+	margin-right: 10px;
+}
+.m-t-s{
+	margin-top: 10px;
+}
+.m-b-s{
+	margin-bottom: 10px;
+}
+
+.m-l-m{
+	margin-left: 20px;
+}
+.m-r-m{
+	margin-right: 20px;
+}
+.m-t-m{
+	margin-top: 20px;
+}
+.m-b-m{
+	margin-bottom: 20px;
+}
+
+/*解决表头偏移*/
+th.gutter{
+	display: block !important;
+}
+
+.meet_detail .el-card__header{
+	padding: 10px;
+}
+.meet_detail .el-card__body{
+	padding: 10px;
+}
+
+// 上传图片
+.avatar-uploader .el-upload {
+	border: 1px dashed #d9d9d9;
+	border-radius: 6px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+	border-color: #409EFF;
+}
+.avatar-uploader-icon {
+	font-size: 28px;
+	color: #8c939d;
+	background-color: #f0f1f3;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+.avatar {
+	width: 100px;
+	height: 100px;
+	display: block;
+}
+
+// 用户、大师详情
+.meet_detail{
+	width: 83%;
+	margin: 0 auto 20px auto;
+}
+.master_detail_wrap{
+	display: flex;
+	align-items: center;
+	border: 1px solid #ebeef5;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.master_avatar_wrap{
+	border-radius: 50px;
+	border: 1px solid #8fd4dd;
+	overflow:hidden ;
+	width: 100px;
+	height: 100px;
+}
+.master_tag_wrap{
+	flex-grow: 1;
+	margin-left: 10px;
+}

@@ -1,0 +1,7 @@
+/* components/text.wxss */
+.texter{
+  width:100rem;
+  height:40rem;
+  color:red;
+  border:1px solid black;
+}

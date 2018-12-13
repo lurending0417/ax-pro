@@ -1,0 +1,31 @@
+<view class='master-item-wrap' bindtap="toMasterDetail">
+	<!-- master-item-header -->
+	<view class='header-wrap'>
+		<avatar-item src="{{master.avatar}}"/>
+		<view class='detail-wrap'>
+			<view class='title'>{{master.nick}}</view>
+			<view class='star'>
+				<image wx:for='{{starArr}}' src="{{item === 1?redStarSrc:greyStarSrc}}" wx:key="{{index}}"></image>
+			</view>
+		</view>
+		<view class='concern-wrap'>
+			<button
+					class='concern-btn'
+					catchtap='follow'
+					data-follow="{{master.follow}}"
+					data-followtimes="{{master.followTimes}}"
+					data-id="{{master.id}}">{{master.follow ? '已关注':'关注'}}</button>
+			<view class='concern-num'>{{master.followTimes}}人关注</view>
+		</view>
+	</view>
+	<!-- master-item-content -->
+	<view class='content-wrap'>
+		{{master.intro}}
+	</view>
+	<!-- master-item-footer -->
+	<view class='footer-wrap'>
+		<text class='tag-item' wx:for="{{master.tags}}" wx:key='{{index}}'>
+			<text>#</text>{{item}}
+		</text>
+	</view>
+</view>

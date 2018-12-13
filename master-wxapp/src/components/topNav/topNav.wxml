@@ -1,0 +1,10 @@
+<view class='nav-wrap'>
+	<view 
+	wx:for="{{categoryList}}"
+	class="nav-item {{index === choosedIndex ? 'choosed-nav': ''}}"
+	wx:key="{{item.id}}" 
+	bindtap="switchNav" 
+	data-index='{{index}}'>
+		{{item.name}}
+	</view>
+</view>

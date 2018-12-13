@@ -1,0 +1,20 @@
+<view class="user">
+    <view class="user_icon">
+        <image class="user_icon_img" src="{{info.avatar}}"></image>
+        <image class="user_icon_tag" src="{{info.master ? masterIcon : vipIcon}}" hidden="{{!info.master && !info.vip}}"></image>
+    </view>
+    <view class="user_detail">
+       <view class="user_detail_head">
+           <text class="user_nick">{{info.nick}}</text>
+           <text class="user_cate" hidden="{{!info.categoryColor}}" style="background-color: {{info.categoryColor}}">{{info.categoryName}}</text>
+       </view>
+        <view class="user_stars" hidden="{{!info.master}}">
+            <block wx:for="{{info.score}}">
+                <image class="user_star" src="{{star}}">
+
+                </image>
+            </block>
+        </view>
+        <text class="{vip ? user_status_vip : user_status_nor }" hidden="{{info.master}}">{{vip ? "会员" : "普通用户"}}</text>
+    </view>
+</view>

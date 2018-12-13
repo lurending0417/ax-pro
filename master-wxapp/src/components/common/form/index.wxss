@@ -1,0 +1,35 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.form-btn{
+  width: 80%;
+  margin-top:20rpx;
+}
+.pic-upload{
+width:60px;
+height:60px;
+background:#cecdce;
+text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+.pic-upload-img{
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+}
+.picker-label{
+  width:90px;
+  min-width: 90px;
+  max-width: 90px;
+  text-align: left;
+  float:left;
+}
+.picker-input{
+  text-align: left;
+  float:left;
+}

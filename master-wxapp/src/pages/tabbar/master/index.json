@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+	"topNav": "/src/components/topNav/topNav",
+	"masterItem": "/src/components/masterItem/masterItem",
+    "refresh": "/src/components/common/refreshAndMore/refresh/index",
+    "more": "/src/components/common/refreshAndMore/more/index",
+    "placeholder": "/src/components/common/placeholder/placeholder"
+  },
+  "window": {
+    "enablePullDownRefresh": true
+  },
+  "navigationBarTitleText": "喔喔百家"
+}

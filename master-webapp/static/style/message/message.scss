@@ -1,0 +1,99 @@
+$border-color: #E0E0E0;
+$text-color: #5f646e;
+$border-width: .05rem;
+$margin-width: .75rem;
+$font-size: .75rem;
+$font-size-sm: .65rem;
+$bg-gray:#FCFCFC;
+
+.margin-cls{
+  margin: {
+    left: $margin-width;
+    right: $margin-width;
+    bottom: $margin-width;
+  };
+}
+
+.remark_wrap{
+  @extend .margin-cls;
+  background-color: #fff;
+  color: $text-color;
+  font-size: $font-size;
+  padding: .25rem;
+}
+
+.flex-center{
+  @extend .margin-cls;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-wrap{
+  @extend .flex-center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  button{
+    margin-bottom: .5rem;
+  }
+}
+
+
+
+
+
+//消息列表item
+.message_item_wrap.border-round{
+padding:.75rem;
+}
+.message_item_wrap{
+  display: flex;
+  align-items: center;
+  margin: 0 .75rem .5rem;
+  background-color: $btn-base-color-g;
+  
+  height: 2.95rem;
+  .message-remark-icon{
+    margin-right: .5rem;
+  }
+  .remark_title{
+    flex-grow: 1;
+    color: #2B2B2E;
+  }
+  .remark_tip{
+    color: #9B9B9B;
+  }
+  .right-arrow-icon{
+    margin-left: .5rem;
+  }
+}
+
+.reward-content-wrap{
+  background-color: $btn-base-color-g;
+  margin: .5rem .75rem;
+  padding: .5rem .5rem;
+  .reward-title-wrap{
+    display: flex;
+    align-items: center;
+    .reward-title{
+      flex-grow: 1;
+      margin-left: .5rem;
+      color: #2B2B2E;
+    }
+    .reward-time{
+      color: #CF9F41;
+      font-weight: bold;
+    }
+  }
+  .grey-sm-cls{
+    color:#9B9B9B;
+    margin: .5rem auto;
+  }
+  .reward-content{
+    margin: .5rem auto 0;
+    color: #2B2B2E;
+    font-weight: bold;
+  }
+  .bounty-text{
+    color:$main-color-2-g;
+  }
+}

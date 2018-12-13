@@ -1,0 +1,54 @@
+/* components/dialog/dialog.wxss */
+.wx-dialog{
+   position: fixed;
+   top:0;
+   left:0;
+   width:100%;
+   height: 100%;
+   background-color: transparent;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.wx-modal{
+  background-color:black;
+  opacity: .3;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+}
+.wx-content{
+  z-index: 10;
+  width:70%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 2px 2px 2px #888888;
+  padding: 18px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #fff;
+}
+.wx-content .txt{
+  text-align: center;
+  width: 80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 18px;
+  background-color: white;
+}
+.wx-footer{
+  height:45;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.wx-footer button{
+  width:35%;
+}

@@ -1,0 +1,24 @@
+.avatar-warp{
+	width: 100rpx;
+	height: 100rpx;
+	position: relative;
+	margin-right: 20rpx;
+}
+.avatar-img{
+	overflow: hidden;
+	border-radius: 50rpx;
+	width: 100rpx;
+	height: 100rpx;
+}
+.avatar{
+	width: 100rpx;
+	height: 100rpx;
+}
+.vip-icon{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 34rpx;
+	height: 34rpx;
+	z-index: 1
+}

@@ -1,0 +1,81 @@
+{
+      "pages": [
+            "src/pages/tabbar/master/index",
+            "src/pages/tabbar/index/index",
+            "src/pages/tabbar/logs/logs",
+            "src/pages/tabbar/my/index",
+            "src/pages/tabbar/cert/index",
+            "src/pages/tabbar/msg/index",
+            "src/pages/tabbar/study/index",
+            "src/pages/tabbar/webpage/index",
+            "src/pages/tabbar/pay/index"
+      ],
+      "subpackages": [
+            {
+                  "root": "src/pages/my",
+                  "name": "my",
+                  "pages": [
+                        "info/index",
+                        "modifypass/index",
+                        "bind/index",
+                        "bindphone/index",
+                        "login/index"
+                  ]
+            },
+            {
+                  "root": "src/pages/cert",
+                  "name": "cert",
+                  "pages": [
+                        "list/index",
+                        "detail/index",
+                        "generate/index",
+                        "upload/index"
+                  ]
+            }
+      ],
+      "window": {
+            "backgroundTextStyle": "light",
+            "navigationBarBackgroundColor": "#fff",
+            "navigationBarTitleText": "喔喔百家",
+            "enablePullDownRefresh": true,
+            "navigationBarTextStyle": "black"
+      },
+      "tabBar": {
+            "color": "#929292",
+            "selectedColor": "#cf9f41",
+            "backgroundColor": "transparent",
+            "current": 1,
+            "list": [
+                  {
+                        "pagePath": "src/pages/tabbar/index/index",
+                        "iconPath": "assets/imgs/tabs/housegrey@3x.png",
+                        "text": "首页",
+                        "selectedIconPath": "assets/imgs/tabs/house@3x.png"
+                  },
+                  {
+                        "pagePath": "src/pages/tabbar/master/index",
+                        "iconPath": "assets/imgs/tabs/sagegrey@3x.png",
+                        "text": "大师",
+                        "selectedIconPath": "assets/imgs/tabs/sage@3x.png"
+                  },
+                  {
+                        "pagePath": "src/pages/tabbar/study/index",
+                        "iconPath": "assets/imgs/tabs/studygrey@3x.png",
+                        "text": "学习",
+                        "selectedIconPath": "assets/imgs/tabs/study@3x.png"
+                  },
+                  {
+                        "pagePath": "src/pages/tabbar/msg/index",
+                        "iconPath": "assets/imgs/tabs/messagegrey@3x.png",
+                        "text": "消息",
+                        "selectedIconPath": "assets/imgs/tabs/message@3x.png"
+                  },
+                  {
+                        "pagePath": "src/pages/tabbar/my/index",
+                        "iconPath": "assets/imgs/tabs/megrey@3x.png",
+                        "text": "我的",
+                        "selectedIconPath": "assets/imgs/tabs/me@3x.png"
+                  }
+            ]
+      }
+}

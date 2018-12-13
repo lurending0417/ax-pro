@@ -1,0 +1,4 @@
+<view class="h_header" bindtap="jumpPage">
+    <text class="h_header_title">{{title}}</text>
+    <text class="h_header_detail">全部</text>
+</view>

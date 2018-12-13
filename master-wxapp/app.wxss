@@ -1,0 +1,68 @@
+/**app.wxss**/
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    /* padding: 200rpx 0; */
+    box-sizing: border-box;
+}
+
+.theme-space {
+    height: .5rem;
+    width: 100%;
+    background: #f8f8f8;
+}
+
+.icon-right {
+    height: .5rem;
+    width: .3rem;
+    margin-left: .5rem;
+}
+
+.fs-max {
+    font-size: .85rem;
+}
+
+.fs-big {
+    font-size: .8rem;
+}
+
+.fs-normal {
+    font-size: .75rem;
+}
+
+.fs-small {
+    font-size: .7rem;
+}
+
+.fs-smaller {
+    font-size: .6rem;
+}
+
+.fs-bold {
+    color: #2B2B2E
+}
+
+.fs-gray {
+    color: #9B9B9B !important;
+}
+
+.fs-gold {
+    color: #CF9F41;
+}
+
+.fs-blue {
+    color: #6176A0
+}
+
+.fs-white {
+    color: #FFFFFF;
+}
+
+.list-split-border .li {
+    margin-top: .75rem;
+    border-bottom: 1px solid hsla(0, 0%, 91%, .5);
+}

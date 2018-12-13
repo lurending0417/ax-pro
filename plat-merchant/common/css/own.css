@@ -1,0 +1,35 @@
+.flex_layout {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.flex_layout > div {
+    margin-bottom: 10px;
+    width: 170px;
+    margin-right: 18px;
+}
+
+.flex_layout > div > img {
+    width: 170px;
+}
+
+.line-cls{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.table-cls td,.table-cls th{
+    text-align: center;
+    vertical-align: middle;
+}
+.footer_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.slashCls {
+    position: relative;
+    background: url("/assets/slash.png") no-repeat;
+    background-size: 100% 100%;
+}

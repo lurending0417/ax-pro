@@ -1,0 +1,5 @@
+/* components/writeItem/index.wxss */
+.red{
+  border:1px dashed red;
+  color:'red';
+}

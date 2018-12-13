@@ -1,0 +1,835 @@
+/**全局变量*/
+@import "./constant.scss";
+
+html, body {
+    font-size: 0.14rem;
+    // max-width: 1000px;
+    margin: 0 auto;
+    background: #fff !important;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+    font-style: normal;
+}
+
+code, kbd, pre, samp {
+    font-family: couriernew, courier, monospace;
+}
+
+small {
+    font-size: 12rem;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+a.button, li a {
+    color: #666;
+}
+
+div p {
+    margin: .25rem 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+img {
+    vertical-align: top;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** color */
+.color-black {
+    background-color: #4A4A4A;
+}
+
+.whiteBg {
+    background-color: #fff !important;
+}
+
+/** button */
+
+/**nav */
+.bar.color-black, .color-black .buttons-tab {
+    background-color: #4A4A4A;
+    border-bottom-width: 0;
+}
+
+.bar.color-black .title, .bar.color-black .button-link, .color-black .buttons-tab .button {
+    color: #fff;
+}
+
+.p-headers.bar.color-black .button-link, .p-headers.color-black .buttons-tab .button {
+    color: #9B9B9B;
+}
+
+.p-headers.color-black .buttons-tab .button.active {
+    color: #fff;
+}
+
+/** list */
+.content .list-split.list-block {
+    margin-top: .75rem;
+    font-size: .6rem;
+}
+
+.content .list-split.list-block .item-content {
+    background-color: #fff;
+    font-size: .6rem;
+}
+
+.list-split li {
+    margin-top: 0.25rem;
+}
+
+.list-split li:last-child {
+    margin-bottom: .75rem;
+}
+
+.list-split.list-block ul {
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+.list-split-border li {
+    margin-top: .75rem;
+    border-bottom: 1px solid $hr-line-color;
+}
+
+.list-split-border li:last-child {
+    border-bottom-width: 0px;
+}
+
+/**page*/
+
+.page {
+    a {
+        color: inherit;
+    }
+    .page-body > .bar.bar-nav {
+        position: fixed;
+    }
+    .buttons-row, .buttons-tab, .bar {
+        z-index: 5;
+    }
+    .buttons-tab .button {
+        color: $fs-color-bold;
+    }
+
+    .content-block {
+        color: $fs-color-bold;
+    }
+
+    .no-scroll {
+        overflow-x: hidden !important;
+        overflow-y: hidden !important;
+    }
+    .no-border {
+        border-width: 0px !important;
+    }
+    .content {
+        overflow-y: hidden;
+        // background-color: #F8F8F8;
+        background-color: #fff;
+        font-size: .7rem;
+        > div {
+            overflow-y: auto;
+            overflow-x: hidden;
+            height: 100%;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+    .content .white {
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+    }
+    .button {
+        line-height: 1.3rem;
+    }
+    .swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{
+        margin: 0 .25rem;
+        width:.4rem;
+        height: .4rem;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #CF9F41;
+    }
+}
+
+.footer.slideInUp ~ .pages .page-current .page-body > .content {
+    padding-bottom: 2.5rem
+}
+
+/**footer*/
+.page .footer {
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    bottom: 0;
+
+}
+
+.footer.bar-tab .tab-item.active {
+    color: #CF9F41;
+}
+
+.footer.bar-tab .tab-item {
+    .icon {
+        width: 1.3rem;
+        height: 1.3rem;
+        margin-top: -.5rem;
+    }
+}
+
+.footer.buttons-tab .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/**font size*/
+.letter-space-3 {
+    letter-spacing: 3px;
+}
+
+.letter-space-2 {
+    letter-spacing: 2px;
+}
+
+.letter-space-1 {
+    letter-spacing: 1px;
+}
+
+.fs-max {
+    font-size: .85rem;
+}
+
+.fs-big {
+    font-size: .8rem;
+}
+
+.fs-normal {
+    font-size: .75rem;
+}
+
+.fs-small {
+    font-size: .7rem;
+}
+
+.fs-smaller {
+    font-size: .6rem;
+}
+
+.fs-bold {
+    color: #2B2B2E
+}
+
+.fs-gray {
+    color: #9B9B9B !important;
+}
+
+.fs-gold {
+    color: $main-color-2-g;
+}
+
+.fs-blue {
+    color: #6176A0
+}
+.fs-white {
+    color: #FFFFFF;
+}
+
+.fs-line1 {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.fs-line2 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.fs-line3 {
+    -webkit-line-clamp: 3;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.text-through {
+    text-decoration: line-through;
+}
+
+.text-no-wrap {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/**border*/
+.border-color {
+    border-color: #E0E0E0 !important;
+}
+
+.border-color-gold {
+    border-color: #CF9F41;
+}
+
+.border-cycle {
+    border-radius: 50%;
+}
+
+.border-round {
+    border: .05rem solid #E0E0E0;
+    border-radius: 0.5rem;
+    padding: .25rem;
+}
+
+/**common css bg*/
+.page .transparent {
+    background-color: transparent;
+    border-width: 0;
+}
+
+.opac0 {
+    opacity: 0;
+}
+
+.button.blue-btn {
+    background-color: #fff;
+    border-color: $fs-color-blue;
+    color: $fs-color-blue;
+}
+
+.button.gray-btn {
+    background-color: #F6F6F6;
+    border-color: #E0E0E0;
+    color: #6176A0;
+}
+
+.button.gray-btn-gold {
+    background-color: #F6F6F6;
+    border-color: #E0E0E0;
+    color: $main-color-2-g;
+    border-width: 0;
+}
+
+.button.white-btn {
+    background-color: #fff;
+    border-color: #E0E0E0;
+    color: $main-color-2-g;
+}
+
+.button.gray-btn-light {
+    background-color: #F6F6F6;
+    border-color: #E0E0E0;
+    color: #E7E7E7;
+}
+
+.button.gray-border-btn {
+    background-color: #fff;
+    border-color: #E0E0E0;
+    color: #E7E7E7 !important;
+}
+
+.button.gold-btn {
+    background-color: #CF9F41;
+    border-color: #CF9F41;
+    color: white !important;
+}
+
+.button.gold-border-btn {
+    background-color: #fff;
+    border-color: #CF9F41;
+    color: #CF9F41 !important;
+}
+
+.button.btn-size-normal {
+    width: 4rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    font-size: .7rem;
+}
+
+.btn-cycle {
+    border-radius: .55rem;
+}
+
+.btn-size-normal.button-round {
+    border-radius: 1.65rem;
+}
+
+.btn-size-normaler.button-round {
+    border-radius: 2.25rem;
+}
+
+.button.btn-size-normaler {
+    width: 4.5rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: .75rem;
+    font-weight: 600;
+}
+
+.button.btn-size-half {
+    width: 50%;
+    height: 2.1rem;
+    line-height: 2.1rem;
+}
+
+.button.btn-size-big {
+    @extend .button.btn-size-normaler;
+    width: 6rem;
+    padding: .25rem .75rem;
+    height: 2.5rem;
+}
+
+.tag-round {
+    background-color: #CF9F41;
+    color: #fff;
+    padding: 0 .25rem;;
+    border-radius: .55rem;
+    font-size: .6rem;
+    border-width: 0;
+    text-align: center;
+}
+
+/**list empty*/
+.list-empty {
+    height: 60%;
+    ul {
+        height: 100%;
+    }
+}
+
+.list-empty li span, .list-empty li img, .list-empty li p, .list-empty li label {
+    background-color: #FCFCFC;
+    min-height: 10px;
+}
+
+.list-empty .m100 {
+    min-width: 100px;
+}
+
+.list-empty .m250 {
+    min-width: 200px;
+}
+
+.list-empty li span, .list-empty li img, .list-empty li p, .list-empty li label, .list-empty li .button {
+    background-color: #eeeeee;
+    min-height: 20px;
+}
+
+.list-empty span {
+    min-width: 100%;
+    min-height: 20px;
+    display: inline-block;
+}
+
+.list-empty .empty-50 span {
+    min-width: 50px;
+}
+
+// 去掉list 的右边距 修改字体尺寸
+.common-list {
+    .list-block .item-inner {
+        padding: .75rem;
+        font-size: .7rem;
+        .item-title {
+            font-size: .7rem;
+            color: #2B2B2E;
+        }
+        .item-after {
+            font-size: .7rem;
+        }
+    }
+}
+
+.page .list-block {
+    input[type=text] {
+        font-size: .7rem;
+    }
+    .item-link .item-inner {
+        padding-right: 1.5rem;
+        background-image: url("../images/icon/icon-next.png");
+        background-repeat: no-repeat;
+        background-position: 97% center;
+        background-position: -webkit-calc(100% - .5rem) center;
+        background-position: calc(100% - .5rem) center;
+        background-size: .4rem;
+    }
+
+}
+
+/** 充满 父*/
+.full {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    // overflow: hidden!important;
+}
+
+/** plugin */
+.city-detail {
+    height: 3rem !important;
+    max-height: 3rem !important;
+    font-size: .7rem;
+    display: flex;
+    flex-direction: column;
+    color: #9B9B9B;
+    justify-content: center;
+    align-items: flex-end;
+    width: 65%;
+}
+
+.city-detail span {
+    text-align: right;
+    color: #9B9B9B;
+}
+
+.time-range {
+    font-size: .7rem;
+    width: 85%;
+    height: 1rem;
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    color: #9B9B9B;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.maxtxt {
+    height: 9rem;
+    position: relative;
+    width: 100%;
+    padding: .5rem .75rem;
+}
+
+.maxtxt textarea.full {
+    position: relative;
+    color: #9B9B9B;
+    font-size: .7rem;
+    border: 1px solid #E0E0E0;
+    background-color: #FCFCFC;
+    border-radius: .75rem;
+    height: 100%;
+}
+
+.maxtxt-span {
+    position: absolute;
+    bottom: .75rem;
+    right: 1.25rem;
+    color: #9B9B9B;
+    font-size: .7rem;
+}
+
+.common-picker input {
+    border-width: 0;
+}
+
+.avator-small {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: black;
+    margin-left: 0.1rem;
+}
+
+.avator-normal {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: transparent;
+    // overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/**单行文本超出部分显示省略号*/
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
+.theme-gold-text-color {
+    color: #CF9F41 !important;
+}
+
+.theme-space {
+    height: 0.5rem;
+    width: 100%;
+    background: #F8F8F8;
+}
+
+.theme-radius {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.theme-border {
+    border: 1px solid #E0E0E0;
+}
+
+.theme-background-FC {
+    background: #FCFCFC;
+}
+
+.theme-bold {
+    font-weight: bold;
+}
+
+.h-line {
+    height: 0.5rem;
+    background-color: #F8F8F8;
+    width: 100%;
+}
+
+// image background
+.imgBg {
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+
+.img {
+    width: 100%;
+}
+
+// 重写modal按钮样式
+.modal-buttons > .modal-button {
+    @extend .fs-big;
+    color: $main-color-2-g;
+}
+
+.bar .button.button-link.pull-right.close-picker {
+    color: #CF9F41;
+}
+
+.none {
+    display: none;
+}
+
+// 购买会员页面样式
+.page > .nav-define {
+    background-image: url('../images/vip/base@2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 8.8rem;
+}
+
+.vip_card_wrap {
+    background-image: url('../images/vip/card@2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    width: 100%;
+    height: 26rem;
+}
+
+$vip-card-btn-width: 15.5rem;
+.vip_card_btn {
+    margin-top: -3.75rem;
+    background-image: url('../images/vip/button@3x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+    // width: $vip-card-btn-width;
+    width: 80%;
+    height: 2.25rem;
+}
+
+// 列表为空的时候的占位符
+.empty-list-cls {
+    text-align: center;
+    font-size: $normal-font-size-g;
+}
+
+// width
+.w100 {
+    width: 100%;
+}
+
+// display flex
+.disp-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disp-vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.disp-vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.disp-vertical-center-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.disp-hor-start {
+    padding: .5rem .75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.disp-hor-bet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+// margin
+.mt {
+    margin-top: .55rem;
+}
+
+.icon.icon-left {
+    font-weight: bold;
+    margin-left: .55rem;
+    font-size: .7rem !important;
+}
+
+.icon.icon-right, .icon.icon-left {
+    font-weight: bold;
+    font-size: .6rem !important;
+}
+
+.button {
+    // border-color: #cf9f41 !important;
+    //border-color: #cf9f41 !important;
+}
+
+// wx icon
+.wx-icon {
+    position: relative;
+    background-color: #fff;
+    border-radius: .45rem;
+    width: 80%;
+    align-items: center;
+    padding: 1.25rem 15%;
+    height: auto;
+    .wxicon {
+        width: 100%;
+        height: auto;
+    }
+    p {
+        font-size: .8rem;
+        color: $fs-color-bold;
+        font-weight: bold;
+    }
+    .close {
+        position: absolute;
+        bottom: -2.75rem;
+    }
+}
+
+.master_detail_desc {
+    img {
+        width: 100%;
+    }
+}
+
+.canClick {
+    cursor: pointer; //适配ios的中元素可点击
+}
+
+.swiper-pagination-bullet {
+    background: #FFF !important;
+    opacity: 0.8 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #CF9F41 !important;
+}
+
+.user-icon {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+}
+body .modal-inner {
+  position: relative;
+  padding: .75rem;
+  background: white;
+  border-bottom: 1px solid #b5b5b5;
+  border-radius: .35rem .35rem 0 0;
+}

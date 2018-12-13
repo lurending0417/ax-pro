@@ -1,0 +1,64 @@
+
+.chooseCityBox {
+    /* width:100%;
+    height: 13rem;
+    position: fixed;
+    bottom:0;
+    overflow: hidden;
+    z-ndex: 9999999; */
+    height: 13rem;
+    background-color: #fff;
+}
+.chooseHeader{
+    height: 3.25rem;
+    /* border-top: 1px solid #CF9F41; */
+    padding-top: .25rem;
+}
+
+.chooseCityBox .chooseCityInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.chooseCityBox .chooseCityTop {
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.15rem 0
+}
+
+.chooseCityBox .chooseCityTopText {
+    padding-left: 0.75rem;
+    font-size: 0.7rem;
+    height: 1.5rem;
+    overflow: hidden;
+    
+}
+.chooseCityBox .chooseCityTopText  .fs-gold{      
+}
+.chooseCityTopText div{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+.chooseCityTop .fs-gold.marginRight6{
+    border-bottom:1px solid;
+}
+
+.chooseCityBox .marginRight6 {
+    margin-right: 20%;
+}
+
+.chooseCityBox .chooseScroll {
+    padding: 0 0 0.75rem 0.75rem;
+    background:#fcfcfc;
+    overflow-y: scroll
+}
+.chooseScroll>div{
+    font-size:.68rem;
+    margin:.55rem 0 0 0;
+}

@@ -1,0 +1,18 @@
+<!-- index.wxml -->
+<!-- <scroll-view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="{{avatar}}" />
+    <text>{{nickname}}</text>
+  </view>
+  <van-cell-group>
+    <van-cell data-item="{{item}}" bind:click="itemClick" wx:key="{{item.href}}" wx:for="{{list}}" wx:for-item="item" title="{{item.name}}"></van-cell>
+  </van-cell-group>
+</scroll-view> -->
+<!-- <web-view src="https://m.9999ax.com/index/learn"></web-view> -->
+<scroll-view class="container  list-split-border">
+  <tab bind:change="onHeaderChange" keyfield="name" headers="{{headers}}" />
+  <refresh showLoading="{{showLoadingRefresh}}"></refresh>
+  <signed bind:onetap="onTap" style="position:relative;z-index:1;" total="{{90}}" checked="{{signed.checkCount}}" helped="{{signed.helpCount}}" hasTitle="{{true}}" />
+  <course-listitem style="position:relative;z-index:2;" wx:key="id" store="{{item}}" wx:for-item="item" wx:for="{{rows}}" class="li" />
+  <more showLoading="{{showLoadingMore}}" wx:if="{{showFooter}}"></more>
+</scroll-view>

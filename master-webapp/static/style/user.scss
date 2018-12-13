@@ -1,0 +1,26 @@
+.user-setting{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.user-setting .list-block{
+    margin:0;
+}
+.user-setting .item-link.item-content{
+    width:100%;
+    justify-content: flex-end;
+    padding-left:0;
+}
+
+.user-setting-head .icon{
+    position: absolute;
+    bottom: 0.25rem;
+    padding-left: 3.5rem;
+}
+.user-setting-head .avator-normal{
+    width:3rem;
+    height: 3rem;
+}
+.user-setting-top-bg{
+    
+}

@@ -1,0 +1,5 @@
+<!--components/text.wxml-->
+<view  bindtap="onPress">
+  <text class="texter">tap Me {{tabCount}} times</text>
+</view>
+

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "登录",
+  "usingComponents": {
+    "van-cell": "/src/ui/vant-weapp/cell/index",
+    "van-field": "/src/ui/vant-weapp/field/index",
+    "van-cell-group": "/src/ui/vant-weapp/cell-group/index",
+    "picker-img": "/src/components/common/upload/index",
+    "easy-form": "/src/components/common/form/index",
+    "van-toast": "/src/ui/vant-weapp/toast/index"
+  }
+}

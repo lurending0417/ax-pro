@@ -1,0 +1,96 @@
+.page .content .meet.full{
+    overflow-y: hidden;
+}
+.meet{
+    background-color:#fff;
+    .list-split li{
+        margin-top:0;
+    }
+}
+.meet .list-block ul{
+    background-color:transparent;
+}
+.meet ul .mhead{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-top:.25rem;
+    padding-bottom: .25rem;
+}
+.meet ul .mhead img{
+    width:80%;
+    min-height: 4rem;
+    max-height: 5rem;
+    margin-bottom:.5rem;
+}
+.meet ul .mhead span{
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+.meet ul .mbody{
+    position: relative;
+    min-height: 100%;
+    align-self: stretch;
+    padding-top: .5rem;
+}
+.meet ul li{
+    padding:0 0.75rem;
+    overflow: hidden;
+}
+.meet ul li .umain{
+    border:1px solid #E0E0E0;
+    background-color:#FCFCFC;
+    border-radius: .45rem;
+    //margin-bottom:.25rem;
+}
+.meet ul .mfooter{
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: .5rem;
+}
+
+.meet ul .mfooter .button:first-child{
+    margin-right:.75rem;
+}
+
+/** meet edit */
+.meetedit {
+    .ms_item_header{
+        padding-left:.75rem;
+    }
+    .me-footer{
+        margin-top:.75rem;
+        margin-bottom:1.75rem;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .item-title.label{
+        color:#2B2B2E;
+        font-size: .7rem;
+    }
+    .list-block li  input,.list-block li  .input{
+        border-width: 0;
+        height:auto;
+        text-align: right;
+        font-size: .7rem;
+        color:#9B9B9B;
+    }
+    .list-block ul{
+        border-bottom-width: 0px;
+    }
+    .list-block .item-inner{
+        border-bottom-width: 0;
+    }
+    .list-block li{
+        border-top:1px solid #E0E0E0;
+    }
+    .list-block li:first-child{
+        border-top-width: 0;
+    }
+}
+
+

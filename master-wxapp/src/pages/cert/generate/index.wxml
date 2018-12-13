@@ -1,0 +1,12 @@
+<!-- logs.wxml -->
+<view class="container">
+  <van-cell-group>
+    <van-cell title="设置证书名字"></van-cell>
+    <van-cell>
+      <input placeholder="设置证书名字" />
+    </van-cell>
+  </van-cell-group>
+  <button class="btn" type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="onTap">
+    提交生成证书
+  </button>
+</view>

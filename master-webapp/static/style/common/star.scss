@@ -1,0 +1,168 @@
+$bottom: -11rem;
+
+// 选星评价弹窗
+.star_group{
+  display: flex;
+  justify-content: space-around;
+}
+.score{
+  color: #D0021B;
+  text-align: center;
+  margin-top: .75rem;
+}
+
+.btn_wrap {
+  text-align: center;
+  margin-top:.75rem;
+  .submit_btn_cls{
+    border-color:$main-color-2-g;
+    color: $main-color-2-g;
+    display: inline-block;
+    width: 5.75rem;
+    height: 2.25rem;
+  }
+}
+
+.gift-plugin.gift_content_wrap{
+  left:0;
+  margin-left:0;
+  padding:0 10%;
+  width:100%;
+  .after_gift_icon{
+    right:10%;
+  }
+   ul li{
+    width:24%;
+
+  }
+   ul li:not(:nth-child(3n)){
+    margin-right:14%;
+  }
+  .sure_btn_wrap{
+    margin-top:1.25rem;
+  }
+}
+
+.gift_content_wrap{
+  background-color: #fff;
+  position: fixed;
+  //bottom: 10.7rem;
+  bottom: $bottom;
+  padding: 0 1.5rem;
+  height: 10.7rem;
+  border-top: none;
+  z-index: 9999;
+  .after_gift_icon {
+    width:.5rem;
+    height: .3rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .75rem;
+    background-image: url("../images/icon/below@2x.png");
+    background-size:.5rem .3rem;
+  }
+  .gift_mask{
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    top: -5rem;
+    background-color: rgba(43,43,46, 0.2);
+    left: -1.5rem;
+  }
+  .gift_title{
+    color: #2B2B2E;
+    margin-top: .5rem;
+  }
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
+    li{
+      border: .05rem solid $btn-border-color-g;
+      color: $btn-border-color-g;
+      width: 3.75rem;
+      height: 2rem;
+      line-height:2rem;
+      text-align: center;
+      vertical-align: middle;
+      margin-top: .5rem;
+      display: inline-block;
+    }
+    li.choose_gift_item{
+      border: .05rem solid $main-color-2-g;
+      color: $main-color-2-g;
+    }
+    li:not(:nth-child(3n)){
+      margin-right: 2.25rem;
+    }
+  }
+  .sure_btn_wrap{
+    text-align: center;
+    margin: .95rem auto;
+    .sure_btn_cls{
+      display: inline-block;
+      background-color: $main-color-2-g;
+      border:none;
+      color: #fff;
+      width: 9.25rem;
+      height: 2.25rem;
+      border-radius: .2rem;
+      text-align: center;
+      font-size: .8rem;
+    }
+  }
+}
+
+// 打赏
+.gift-position{
+  position: fixed;
+  bottom: 1.5rem;
+  left: 50%;
+  margin-left: -0.75rem;
+}
+
+// 遮罩动画
+.gift_mask_animate_show_cls{
+  animation: gift-mask-animate-show .5s;
+  animation-fill-mode:forwards;
+}
+
+.gift_mask_animate_hide_cls{
+  animation: gift-mask-animate-hide .5s;
+  animation-fill-mode:forwards;
+}
+
+// 内容动画
+.gift_content_animate_up_cls{
+  animation: gift-content-animate-up .5s;
+  animation-fill-mode:forwards;
+}
+
+.gift_content_animate_down_cls{
+  animation: gift-content-animate-down .5s;
+  animation-fill-mode:forwards;
+}
+
+@keyframes gift-mask-animate-show
+{
+  from {background-color: rgba(43,43,46, 0);}
+  to {background-color: rgba(43,43,46, 0.2);}
+}
+
+@keyframes gift-mask-animate-hide
+{
+  from {background-color: rgba(43,43,46, .2);}
+  to {background-color: rgba(43,43,46, 0);}
+}
+
+@keyframes gift-content-animate-up
+{
+  from {bottom: $bottom;}
+  to {bottom: 0;}
+}
+@keyframes gift-content-animate-down
+{
+  from {bottom: 0;}
+  to {bottom: $bottom;}
+}

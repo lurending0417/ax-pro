@@ -1,0 +1,5 @@
+@import "./bootstrap.css";
+@import "../../node_modules/bootstrap-vue/dist/bootstrap-vue.css";
+@import "../../node_modules/font-awesome/css/font-awesome.css";
+@import "./style.css";
+@import "./own.css";

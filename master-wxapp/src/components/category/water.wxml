@@ -1,0 +1,11 @@
+<!--components/category/water.wxml-->
+
+
+<view class="fit-parent water">
+      <view class="water-column" style="width:{{columnWidth}}px;" wx:for-item="item" wx:for="{{columns}}" wx:key="column-{{index}}">
+            <view class="water-item" wx:for="{{item}}" wx:for-item="child" wx:for-index="index2" wx:key="column-{{index}}-{{index2}}" style="height:{{child.height}}px;">
+                  <image  src="{{child.imgPath}}" style="height:{{child.height-30}}px;" mode='aspectFit'></image>
+                  <text>hello</text>
+            </view>
+      </view>
+</view>

@@ -1,0 +1,9 @@
+<!-- logs.wxml -->
+<view class="container">
+  <van-cell-group>
+    <van-field wx:for="{{fields}}" wx:for-item="field" value="{{  selCert[field.dataIndex] }}" clearable label="{{field.label}}" icon="question" placeholder="请输入{{field.label}}"></van-field>
+  </van-cell-group>
+  <button class="btn" type="primary" bindtap="toGenerate">生成证书</button>
+  <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="scaleToFill" src="http://pic.qiantucdn.com/58pic/13/19/88/82X58PICteS_1024.jpg!/fw/1024/watermark/url/L2ltYWdlcy93YXRlcm1hcmsveGlhb3R1LnBuZw==/align/center"></image>
+  <image style="width: 200px; height: 200px; background-color: #eeeeee;" mode="scaleToFill" src="https://b-ssl.duitang.com/uploads/item/201604/11/20160411125021_3ZWYK.jpeg"></image>
+</view>

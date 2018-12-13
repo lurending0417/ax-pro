@@ -1,0 +1,19 @@
+.sg_content {
+  height: 3rem;
+  width: 100%;
+  padding-left: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+}
+.sg_speak {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sg_txt_listen {
+  color: #CF9F41;
+  margin-left: 0.5rem;
+}

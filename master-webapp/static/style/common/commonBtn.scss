@@ -1,0 +1,31 @@
+.btn_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_size_185 {
+  height: 9.25rem;
+  width: 2.25rem;
+}
+
+.btn_radius {
+  border-radius: 0.2rem;
+}
+.btn_border {
+  border: 1px #CF9F41 solid;
+  color: #CF9F41;
+}
+.btn_fill {
+  background-color: #CF9F41;
+}
+.btn_collection {
+  @extend .btn_content;
+  width: 4.25rem;
+  height: 1.6rem;
+  border-radius: 0.8rem;
+  backgroud-color: #F6F6F6;
+  border: 0.05rem solid #E0E0E0;
+  color: #6176A0;
+  font-size: 0.7rem;
+}

@@ -1,0 +1,45 @@
+<!-- index.wxml -->
+<scroll-view class="home">
+    <swiper class="home_banner"
+            indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}"
+            interval="{{interval}}"
+            duration="{{duration}}"
+            indicator-color="{{indicator_color}}"
+            indicator-active-color="{{active_color}}"
+    >
+        <block wx:for="{{banners}}">
+            <swiper-item>
+                <image bindtap="bannerClick" data-key="{{item.img}}" src="{{item.img}}" class="home_banner_image"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="item_content">
+        <block wx:for="{{homeItems}}">
+            <view bindtap="itemClick" class="item" data-key="{{item.name}}">
+                <image class="item_img" src="{{item.img}}"></image>
+                <text class="item_txt">{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+    <home_header title="推荐大师"></home_header>
+    <block wx:for="{{masters}}">
+        <van-item data-key="{{item.id}}" bindtap="masterClick" info="{{item}}" type="{{MASTER}}"></van-item>
+    </block>
+
+    <home_header title="推荐课程"></home_header>
+    <block wx:for="{{courses}}">
+        <view class="course_item">
+            <van-course src="{{item.img}}" data-key="{{item.targetId}}" bindtap="courseClick" tag="{{item.discountType}}" status="HOME"></van-course>
+        </view>
+    </block>
+    <home_header title="解惑精选"></home_header>
+    <block wx:for="{{questions}}">
+        <van-item info="{{item}}" data-key="{{item.id}}" type="{{ANSWER}}" bindTap="questionClick"></van-item>
+    </block>
+    <home_header title="悬赏精选"></home_header>
+    <block wx:for="{{wanteds}}">
+        <van-item info="{{item}}" data-key="{{item.id}}" type="{{REWARD}}" bindTap="rewardClick"></van-item>
+    </block>
+</scroll-view>
+<!--<web-view src="https://m.9999ax.com" />-->

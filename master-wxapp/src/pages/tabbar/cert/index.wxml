@@ -1,0 +1,22 @@
+<!-- index.wxml -->
+<scroll-view class="container">
+  <van-cell-group>
+    <van-cell bind:click="toMessage" is-link title="通知" value="详细信息" />
+    <van-cell>
+      <button class="btn" type="primary" loading="{{loading}}" disabled="{{disabled}}" bindtap="onTap">
+        个人荣誉上链
+      </button>
+    </van-cell>
+    <van-cell>
+      <van-search placeholder="请输入搜索关键词"></van-search>
+    </van-cell>
+  </van-cell-group>
+  <van-cell-group>
+    <van-cell title="存证条数：20">
+      <van-button plain type="primary">分享</van-button>
+    </van-cell>
+    <van-cell data-item="{{item}}" bind:click="itemClick" wx:key="{{item.id}}" wx:for="{{list}}" wx:for-item="item" title="{{item.name}}">
+      <text>{{item.time}}</text>
+    </van-cell>
+  </van-cell-group>
+</scroll-view>

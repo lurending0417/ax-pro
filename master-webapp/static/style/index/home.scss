@@ -1,0 +1,276 @@
+@import "../constant.scss";
+
+.home {
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    padding: 0.5rem 0.75rem;
+
+    .ma_avatar {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        position: relative;
+    }
+    .ma_master_confirm {
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .master-confirm-icon {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .home-master-title, .home-course-title, .home-reward-title, .home-answer-title {
+        font-size: .9rem;
+        font-weight: bold;
+    }
+
+    .home-title-all {
+        font-size: 0.7rem;
+        color: #9B9B9B;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .home-top-item {
+        margin-bottom: .55rem;
+    }
+
+    .home-top-banner {
+        width: 100%;
+        height: 7.5rem;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        padding-bottom: 0;
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .home-kinds-box {
+        display: flex;
+        justify-content: space-between;
+        margin-top: .75rem;
+        .home-kind {
+            text-align: center;
+
+            img {
+                width: 1.8rem;
+                height: 1.8rem;
+            }
+
+            div {
+                font-size: 0.7rem;
+                margin-top: 0.25rem;
+                color: #9B9B9B;
+            }
+        }
+    }
+
+    .home-master-box {
+        margin-top: 2rem;
+        .uheader {
+            padding: 0.45rem 0 0.45rem;
+            height: auto;
+            .ma_right {
+                flex: 1;
+                margin-right: .25rem;
+                .fs-bold {
+                    margin-bottom: .25rem;
+                }
+                .tag-span {
+                    padding: 0;
+                }
+                .tag {
+                    border-radius: .5rem;
+                    display: inline-flex;
+                    color: #fff;
+                    margin-left: .75rem;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 .45rem;
+                    font-size: .7rem;
+                }
+                .tag-red {
+                    background-color: #D0021B
+                }
+                .tag-gray {
+                    background-color: #6176A0
+                }
+            }
+        }
+        .home-master-top {
+            display: flex;
+
+            .home-master-title {
+                flex: 1;
+                color: #CF9F41;
+            }
+            .home-master-all {
+                font-size: 0.7rem;
+                color: #9B9B9B;
+                display: flex;
+                justify-content: flex-end;
+                flex-direction: column;
+            }
+        }
+
+        .home-master-item {
+            margin-top: 0.5rem;
+        }
+    }
+
+    .home-answer-box {
+        margin-top: 2rem;
+
+        a:active {
+            // border: 1px solid #855C0A !important;
+        }
+
+        .home-answer-top {
+            display: flex;
+
+            .home-answer-title {
+                flex: 1;
+                color: #CF9F41;
+            }
+            .home-answer-all {
+                font-size: 0.7rem;
+                color: #9B9B9B;
+            }
+        }
+    }
+
+    .home-img-box {
+        width: 100%;
+        //border-top: 1px solid rgba(231, 231, 231, 0.5);
+        //border-bottom: 1px solid rgba(231, 231, 231, 0.5);
+        margin-top: 0.5rem;
+        //padding: 0.5rem 0;
+
+        .home-img {
+            //height: 5rem;
+        }
+
+        .home-img-text {
+            position: absolute;
+            right: 0.25rem;
+            bottom: 0.15rem;
+            color: #FFF;
+        }
+
+        .home-img-line-top {
+            width: 120%;
+            margin-left: -10%;
+            //height: 2px;
+            margin-bottom: 0.75rem;
+            border-top: 1px solid rgba(231, 231, 231, 0.5);
+        }
+
+        .home-img-line-bottom {
+            width: 120%;
+            margin-left: -10%;
+            //height: 2px;
+            margin-top: 0.75rem;
+            border-bottom: 1px solid rgba(231, 231, 231, 0.5);
+        }
+    }
+
+    .home-reward-box {
+        margin-top: 2rem;
+
+        .ri_main {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .home-reward-top {
+            display: flex;
+
+            .home-reward-title {
+                flex: 1;
+                color: #CF9F41;
+            }
+            .home-reward-all {
+                font-size: 0.7rem;
+                color: #9B9B9B;
+            }
+        }
+    }
+}
+
+.home-course-box {
+    margin-top: 2rem;
+    position: relative;
+
+    .home-course-time {
+        position: absolute;
+        bottom: .45rem;
+        right: .45rem;
+        background-color: $main-color-2-g;
+        color: #fff;
+        padding: 0 .25rem;
+    }
+
+    .home-course-top {
+        display: flex;
+
+        .home-course-title {
+            flex: 1;
+            color: #CF9F41;
+        }
+        .home-course-all {
+            font-size: 0.7rem;
+            color: #9B9B9B;
+        }
+    }
+
+    .home-course-banner {
+        width: 100%;
+        //height: 5rem;
+        height: 100%;
+        margin-top: 0.5rem;
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .tag {
+            position: absolute;
+            top: -2.7rem;
+            left: -2.7rem;
+            width: 5rem;
+            height: 5rem;
+            color: #fff;
+            transform: rotate(-45deg);
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            font-size: .6rem;
+            em {
+                font-weight: bold;
+            }
+        }
+        .tag-blue {
+            background: #4A90E2;
+        }
+        .tag-yellow {
+            background: #CF9F41;
+        }
+        .course-tag-color1 {
+            background-color: #CF9F41;
+        }
+        .course-tag-color2 {
+            background-color: #4A90E2;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+  "usingComponents": {
+    "texter": "../../components/test/text1",
+    "dialog": "../../components/dialog/dialog",
+    "writeItem": "../../components/writeItem/index",
+    "van-cell": "/src/ui/vant-weapp/cell/index",
+    "van-cell-group": "/src/ui/vant-weapp/cell-group/index",
+    "tab": "/src/components/common/tab/index",
+    "refresh": "/src/components/common/refreshAndMore/refresh/index",
+    "more": "/src/components/common/refreshAndMore/more/index",
+    "course-listitem": "/src/components/course/courseListItem/index",
+    "signed": "/src/components/course/signed/index"
+  },
+  "window": {
+    "enablePullDownRefresh": true
+  },
+  "navigationBarTitleText": "喔喔百家"
+}

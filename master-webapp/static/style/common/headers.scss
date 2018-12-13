@@ -1,0 +1,108 @@
+.p-headers.cat-header{
+    // position: fixed;
+    // top:2.2rem;
+}
+// asdfdfa
+.p-headers{
+    .buttons-tab{
+        a.button{
+            border-bottom-width: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 2.2rem;
+            padding-top: .25rem;
+            span:first-child {
+                margin-bottom: .25rem;
+                margin-top:-.75rem;
+            }
+            span:last-child {
+                visibility: hidden;
+                width:.75rem;
+                height: 3px;
+                margin-top: -.5px;
+                background: #CF9F41;
+                margin-top: -.5px;
+                border-radius: 5rem;
+            }
+        }
+        a.button.active {
+            border-bottom-width: 0;
+            span:last-child {
+                visibility: visible;
+            }
+        }
+        span {
+            display: block;
+            line-height: 1rem;
+        }
+        a.button.active span{
+            color:#fff;
+        }
+        a.button.active span.gold{
+            color:#CF9F41;
+        }
+    }
+
+    .content-block {
+        
+            .tab {
+                // opacity: 0;
+                transition: opacity .5s;
+                display: none;
+            }
+            .tab.active{
+                display: block;
+            }
+            .tab.active.animated {
+                opacity: 1;
+            }
+    }
+}
+
+.p-headers.vertical {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    .buttons-tab {
+        width: 100%;
+        min-height: 2.2rem;
+    }
+    .content-block {
+        margin-top: 0;
+    }
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        .tab {
+            margin-bottom: .25rem;
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.p-headers.vertical.fixed > .buttons-tab {
+    position: fixed;
+    top: 2.2rem;
+    left: 0;
+    width: 100%;
+}
+
+.head-box {
+    height: 2.3rem !important;
+    .title{
+            width: 100%;
+    text-overflow: ellipsis;
+    padding-left: 15%;
+    padding-right: 15%;
+    }
+}
+
+.head-box * {
+    line-height: 2.3rem !important;
+}

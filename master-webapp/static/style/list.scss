@@ -1,0 +1,29 @@
+.auto-list{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    >div{
+        width:100%;
+        overflow-y:auto;
+        height: 100%;
+    }
+    .list-block{
+        padding-bottom:.75rem;
+        width:100%;
+    }
+}
+.bar~.auto-list{
+    margin-top:2.2rem;
+}
+.tabs .auto-list .pull-to-refresh-content{
+    top:-2.2rem;
+    margin-bottom: .75rem;
+}
+
+.list-without-bottom .auto-list > div {
+    height: auto;
+}
+
+.list-without-bottom .auto-list .list-block {
+    margin-bottom: 0;
+}

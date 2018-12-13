@@ -1,0 +1,164 @@
+.nowrap {
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.text-danger {
+    color: #f56c6c !important;
+}
+
+.text-navy {
+    color: #13ce66 !important;
+}
+
+.text-muted {
+    color: #dcdfe6 !important;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.m-t {
+    margin-top: 20px !important;
+}
+
+.m-b {
+    margin-bottom: 20px !important;
+}
+
+.m-l {
+    margin-left: 20px !important;
+}
+
+.m-l-xs {
+    margin-left: 5px !important;
+}
+
+.m-l-s {
+    margin-left: 8px !important;
+}
+
+.m-r {
+    margin-right: 20px !important;
+}
+
+.m-r-xs {
+    margin-right: 5px !important;
+}
+
+.m-r-s {
+    margin-right: 8px !important;
+}
+
+.w150 {
+    width: 150px !important;
+}
+
+.el-submenu .el-menu-item {
+    padding-left: 60px !important;
+}
+
+.el-cascader {
+    width: 100%;
+}
+
+.el-select {
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+}
+
+.el-table {
+    width: 100%;
+}
+
+.r16 {
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+}
+
+.r23 {
+    width: 23px;
+    height: 23px;
+    border-radius: 2px;
+}
+
+.r32 {
+    width: 32px;
+    height: 32px;
+    border-radius: 2px;
+}
+
+.r64 {
+    width: 64px;
+    height: 64px;
+    border-radius: 2px;
+
+}
+
+.r128 {
+    width: 128px;
+    height: 128px;
+    border-radius: 2px;
+
+}
+
+.el-dialog .el-tab-pane {
+    height: 550px;
+    overflow: auto;
+}
+
+.el-dialog__body {
+    padding-top: 0px !important;
+}
+/*解决表头偏移*/
+th.gutter{
+    display: block !important;
+}
+/*修改表格边框颜色 #9f9f9f*/
+.el-table td, .el-table th.is-leaf {
+    border-bottom: 1px solid #9f9f9f;
+}
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+    border-right: 1px solid #9f9f9f;
+}
+.el-table--border th {
+
+}
+.el-table--border, .el-table--group{
+    border-left: 1px solid #9f9f9f;
+    border-top: 1px solid #9f9f9f;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before{
+    background-color: #9f9f9f;
+}
+.el-table::before{
+    height: 0;
+}
+.el-table__empty-block{
+    border-bottom: 1px solid #9f9f9f;
+}
+.el-table--border th, .el-table__fixed-right-patch{
+    border-bottom: 1px solid #9f9f9f;
+}
+/*表头背景颜色（跟跨行跨列的表头背景颜色一致） #f5f7fa*/
+.el-table th{
+    background: #f5f7fa ;
+}

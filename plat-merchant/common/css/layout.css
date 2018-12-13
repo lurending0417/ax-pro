@@ -1,0 +1,28 @@
+/*.header{*/
+    /*height: 60px;*/
+/*}*/
+/*.body_wrap{*/
+    /*overflow: hidden;*/
+/*}*/
+/*.nav,.content{*/
+    /*float: left;*/
+    /*width: 30%;*/
+    /*overflow-y: auto;*/
+/*}*/
+/*.nav::-webkit-scrollbar,.content::-webkit-scrollbar{*/
+    /*width: 10px;*/
+    /*height:1px;*/
+/*}*/
+/*.nav::-webkit-scrollbar-thumb,.content::-webkit-scrollbar-thumb{*/
+    /*border-radius: 10px;*/
+    /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+    /*background: #fff8d5;*/
+/*}*/
+/*.nav::-webkit-scrollbar-thumb-track,.content::-webkit-scrollbar-thumb-track{*/
+    /*-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
+    /*border-radius: 10px;*/
+    /*background: #EDEDED;*/
+/*}*/
+/*.content{*/
+    /*width: 70%;*/
+/*}*/

@@ -1,0 +1,151 @@
+.plan_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -.8rem;
+    position: relative;
+}
+
+.atten-top-bg {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.plan_money {
+    color: #ffb336;
+    font-weight: 700;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    /* font-size: 1.5rem; */
+}
+
+.plan_container .atten-top-bg image {
+    width: 100%;
+    height: auto;
+}
+
+.plan_bottom_radius {
+    border-bottom-right-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.plan {
+    margin-bottom: 0;
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: .75rem;
+    flex: 1;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    background-color: #fff;
+    padding: .5rem .75rem;
+}
+
+.plan_row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan_title {
+    color: #2b2b2e;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fs-max {
+    font-size: .85rem;
+}
+
+.plan_detail {
+    color: #9b9b9b;
+    position: absolute;
+    right: .5rem;
+    text-align: right;
+}
+
+.fs-small {
+    font-size: .7rem;
+}
+
+.plan_mid {
+    align-items: center;
+}
+
+.plan_mid {
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.plan_money_ct {
+    display: flex;
+    flex-direction: row;
+    color: #2b2b2e;
+    font-size: .85rem;
+    font-weight: 700;
+    justify-content: center;
+    align-items: baseline;
+    padding: .5rem 0;
+}
+
+.plan_mid_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.plan_mid,
+.plan_mid_item {
+    align-items: center;
+}
+
+.plan_mid_title {
+    font-size: 1rem;
+    color: #2b2b2e;
+    font-weight: 700;
+}
+
+.plan_mid_detail {
+    color: #9b9b9b;
+    font-size: .7rem;
+}
+
+.plan_mid {
+    padding: .5rem 0;
+}
+
+.plan_process {
+    height: 1rem;
+    border-radius: .25rem;
+    background-color: #e7e7e7;
+    margin: .25rem 0 .5rem;
+}
+
+.plan_bottom {
+    color: #4a90e2;
+    font-size: .75rem;
+    text-decoration: underline;
+}
+
+.plan_badge {
+    position: absolute;
+    top: -.3rem;
+    right: -2rem;
+    background-color: #4a90e2;
+    height: .7rem;
+    font-size: .55rem;
+    color: #fff;
+    border-radius: .35rem;
+    padding: 0 .35rem;
+    align-items: center;
+}
+
+.plan_row {
+    padding: .25rem 0;
+}

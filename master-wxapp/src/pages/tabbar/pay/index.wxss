@@ -1,0 +1,19 @@
+/**index.wxss**/
+.payinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pay-money{
+  font-weight: bold;
+}
+.pay-money-fee{
+  font-size:30px;
+}
+.pay-tip{
+margin-top:40rpx;
+}
+.pay-btns{
+  
+  padding: 20rpx;
+}

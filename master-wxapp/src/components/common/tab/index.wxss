@@ -1,0 +1,76 @@
+.bar.color-black {
+    background-color: #4a4a4a;
+    border-bottom-width: 0;
+}
+
+.bar-nav {
+    top: 0;
+}
+
+.bar {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    height: 2.2rem;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    background-color: #f7f7f8;
+    border-bottom: 1px solid #e7e7e7;
+    backface-visibility: hidden;
+}
+
+.buttons-tab {
+    z-index: 10;
+    display: flex;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+
+.p-headers.color-black .buttons-tab .button {
+    color: #9b9b9b;
+    border-bottom-width: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: .35rem;
+    z-index: 20;
+    margin-top: 0;
+    font-weight: 400;
+    bottom: -1px;
+    flex: 1;
+    height: 2rem;
+    font-size: .8rem;
+    line-height: 2rem;
+    color: #5f646e;
+    border: 0;
+    border-radius: 0;
+}
+
+.p-headers.color-black .buttons-tab .button.active {
+    color: #fff;
+}
+
+.button text {
+    margin-bottom: .25rem;
+    margin-top: -.75rem;
+    display: block;
+    line-height: 1rem;
+}
+
+.button.active view {
+    width: .75rem;
+    height: 3px;
+    margin-top: -.5px;
+    border-radius: 5rem;
+    display: block;
+    visibility: hidden;
+    line-height: 1rem;
+}
+
+.button.active view {
+    background: #cf9f41;
+    visibility: visible;
+}

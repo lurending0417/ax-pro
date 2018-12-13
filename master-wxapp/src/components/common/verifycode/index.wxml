@@ -1,0 +1,3 @@
+<van-field bind:change="onChange" value="{{ sms }}" center clearable label="短信验证码" placeholder="请输入短信验证码" border="{{ false }}" use-button-slot>
+  <van-button bind:click="sendCode" slot="button" size="small" type="primary">{{label}}</van-button>
+</van-field>

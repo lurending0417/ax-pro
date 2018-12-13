@@ -1,0 +1,21 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+button{
+  width: 100%;
+  margin-top:20rpx;
+}
+
+.picker-label{
+  width:90px;
+  min-width: 90px;
+  max-width: 90px;
+  text-align: left;
+  float:left;
+}
+.picker-input{
+  text-align: left;
+  float:left;
+}

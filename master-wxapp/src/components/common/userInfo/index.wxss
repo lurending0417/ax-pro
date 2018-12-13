@@ -1,0 +1,72 @@
+.user {
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user_icon {
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.user_icon_img {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 1.25rem;
+    background-color: #9b9b9b;
+}
+.user_icon_tag {
+    height: 0.85rem;
+    width: 0.85rem;
+    bottom:1.4rem;
+    position:relative;
+    left:1.8rem;
+
+}
+.user_detail {
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.user_detail_head {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.15rem;
+    margin-left: 0.5rem;
+    align-items: center;
+}
+.user_nick {
+    color: #2B2B2E;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.user_cate {
+    width: 2.5rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 0.5rem;
+    font-size: 0.7rem;
+}
+.user_stars {
+    height: 0.7rem;
+    margin-left: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top:0.2rem;
+}
+.user_star {
+    height: 0.7rem;
+    width: 0.7rem;
+    margin-right: 0.2rem;
+}
+.user_status_vip {
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+    color: #CF9F41;
+}
+.user_status_nor {
+    ont-size: 0.7rem;
+    margin-left: 0.5rem;
+    color: #9B9B9B;
+}

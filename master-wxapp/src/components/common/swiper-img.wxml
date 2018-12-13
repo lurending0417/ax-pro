@@ -1,0 +1,12 @@
+<template name="swiper-img">
+      <swiper
+            indicator-dots='true'
+            class="cat-swap1"
+      >
+             <swiper-item wx:for="{{ds}}" wx:key="index" wx:for-item="item">
+                  <view class="cat-item">
+                        <image style="height:{{height}}px;"  src='{{item.imgPath}}' class='swiper-img' ></image>
+                  </view>
+            </swiper-item> 
+      </swiper> 
+</template>

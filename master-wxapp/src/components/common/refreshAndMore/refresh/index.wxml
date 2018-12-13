@@ -1,0 +1,5 @@
+<view class="pull-to-refresh-layer">
+  <van-loading wx:if="{{showLoading}}" type="spinner" />
+  <icon wx:else type="download" />
+  <text class="fs-gray fs-small">松手刷新</text>
+</view>

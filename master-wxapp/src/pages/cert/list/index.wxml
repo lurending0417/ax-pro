@@ -1,0 +1,9 @@
+<!-- logs.wxml -->
+<view class="container log-list">
+  <text class="log-item">{{text}}</text>
+  <button class="btn" type="primary" bindtap="test">按钮文本</button>
+  <button class="btn" type="primary" bindtap="testBack">back</button>
+  <block wx:for="{{logs}}" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block>
+</view>

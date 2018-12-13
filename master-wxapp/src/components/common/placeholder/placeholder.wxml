@@ -1,0 +1,4 @@
+<view class='placeholder'>
+    <image src='../../../../assets/imgs/icon/blank.png'></image>
+    <text>空空如也</text>
+</view>

@@ -1,0 +1,51 @@
+.home-course-banner {
+    width: 100%;
+    position: relative;
+}
+
+.home-course-banner .tag-blue {
+    background: #4a90e2;
+}
+
+.home-course-banner .tag-yellow {
+    background: #cf9f41;
+}
+
+.home-course-banner image {
+    width: 100%;
+}
+
+.home-course-banner .tag {
+    position: absolute;
+    top: -2.7rem;
+    left: -2.7rem;
+    width: 5rem;
+    height: 5rem;
+    color: #fff;
+    transform: rotate(-45deg);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    font-size: .6rem;
+}
+
+.home-course-banner .home-course-time {
+    font-size: 0.6rem;
+    bottom: 0.25rem;
+    right: 0.25rem;
+    position: absolute;
+    bottom: .45rem;
+    right: .45rem;
+    background-color: #cf9f41;
+    color: #fff;
+    padding: 0 .25rem;
+}
+
+.btn-cycle {
+    border-radius: .55rem;
+}
+
+.theme-radius {
+    border-radius: .5rem;
+}

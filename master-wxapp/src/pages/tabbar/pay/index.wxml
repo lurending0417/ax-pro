@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="payinfo  pay-tip">
+    <text>{{title}}</text>
+    <view class="pay-money"> 
+      <text class="pay-unit">￥</text>
+      <text class="pay-money-fee">{{fee}}</text>
+    </view>
+  </view>
+  <van-cell-group class="pay-tip">
+    <van-cell title="服务提供方" value="喔喔百家"></van-cell>
+  </van-cell-group>
+  <view  class="pay-tip pay-btns">
+    <button  type="primary" bindtap="onTap">支付</button>
+    <button  type="default" bindtap="onCancel">取消</button>
+  </view>
+</view>

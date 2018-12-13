@@ -1,0 +1,326 @@
+/**图标统一 放这里*/
+//tab
+@import "./constant.scss";
+
+.footer .icon{
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+}
+.active .tab-icon-home {
+  // background-image: url('../images/tab/house@2x.png');
+  @include bgImg2Or3('../images/tab/house')
+}
+.tab-icon-home {
+  // background-image: url('../images/tab/housegrey@2x.png');
+  @include bgImg2Or3('../images/tab/housegrey')
+}
+.active .tab-icon-master {
+  // background-image: url('../images/tab/sage@2x.png');
+  @include bgImg2Or3('../images/tab/sage')
+}
+.tab-icon-master {
+  // background-image: url('../images/tab/sagegrey@2x.png');
+  @include bgImg2Or3('../images/tab/sagegrey')
+}
+.active .tab-icon-study {
+//  background-image: url('../images/tab/study@2x.png');
+ @include bgImg2Or3('../images/tab/study')
+}
+.tab-icon-study {
+  // background-image: url('../images/tab/studygrey@2x.png');
+  @include bgImg2Or3('../images/tab/studygrey')
+}
+.active .tab-icon-msg {
+  // background-image: url('../images/tab/message@2x.png');
+  @include bgImg2Or3('../images/tab/message')
+}
+.tab-icon-msg {
+  // background-image: url('../images/tab/messagegrey@2x.png');
+  @include bgImg2Or3('../images/tab/messagegrey')
+}
+.active .tab-icon-my {
+  // background-image: url('../images/tab/me@2x.png');
+  @include bgImg2Or3('../images/tab/me')
+}
+.tab-icon-my {
+  // background-image: url('../images/tab/megrey@2x.png');
+  @include bgImg2Or3('../images/tab/megrey')
+}
+
+
+.icon-locked {
+  background-image: url('../images/icon/locked.png');
+      width: .9rem;
+    height: .9rem;
+}
+.icon-unread,.icon-readed {
+  background-image: url('../images/icon/readed.png');
+  width:.9rem;
+  height: .9rem;
+}
+
+.icon-empty{
+  width:2.5rem;
+  height: 3rem;
+  background-image: url('../images/icon/blank.png');
+  background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100% auto;
+}
+
+.icon-back{
+  background-image: url('../images/icon/back@3x.png');
+  margin-left: .55rem !important;
+    width: .5rem;
+    height: 1.08rem;
+}
+
+.icon-next{
+        background-image: url("../images/icon/icon-next.png") !important;
+}
+
+.icon-vip-btn{
+    background-image: url('../images/vip/button@3x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: auto 90%;
+    // width: $vip-card-btn-width;
+    width: 100%;
+    height: 2.25rem;
+}
+
+.user-setting-bg-icon{
+    background-image: url('../images/user/setting/setting_bg@2x.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width:100%;
+    height: 7rem;
+}
+.user-vip-icon {
+  background-image: url('../images/icon/icon_user_vip@2x.png');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.master-confirm-icon {
+  background-image: url("../images/icon/icon_medal@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.8rem;
+  width: 0.8rem;
+}
+.comment-chat-gray-icon {
+  background-image: url("../images/icon/icon_chat_gray@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.comment-chat-tint-icon {
+  @extend .comment-chat-gray-icon;
+  background-image: url("../images/icon/icon_chat_tint@2x.png");
+}
+.comment-share-gray-icon {
+  background-image: url("../images/icon/icon_share_gray@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.comment-share-tint-icon {
+  background-image: url("../images/icon/icon_share_tint@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.9rem;
+  width: 0.9rem;
+}
+.comment-dot-gray-icon {
+   background-image: url("../images/icon/icon_dot_gray@3x.png");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
+   height: 0.9rem;
+   width: 0.9rem;
+ }
+.comment-dot-tint-icon {
+  @extend .comment-dot-gray-icon;
+  background-image: url("../images/icon/icon_dot_tint@3x.png");
+}
+
+.comment-dot-enable-icon {
+  @extend .comment-dot-gray-icon;
+  background-image: url("../images/icon/icon_dot_enable@3x.png");
+}
+
+.fav-dot-gray-icon {
+   background-image: url("../images/icon/collection@3x.png");
+   background-repeat: no-repeat;
+   background-position: 50% 50%;
+   background-size: cover;
+   height: 0.9rem;
+   width: 0.9rem;
+ }
+.fav-dot-tint-icon {
+  @extend .comment-dot-gray-icon;
+  background-image: url("../images/icon/collectionactive@3x.png");
+}
+
+.star-grey-icon {
+  background-image: url("../images/icon/icon_star_grey@3x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.star-tint-icon {
+  @extend .star-grey-icon;
+  background-image: url("../images/icon/icon_star_tint@3x.png");
+}
+
+.gift-icon{
+  background-image: url("../images/icon/reward2@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+.master-star-icon {
+  background-image: url("../images/icon/icon_star@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+.comment-add-img-icon {
+  background-image: url("../images/icon/icon_add_img@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 4rem;
+  width: 4rem;
+}
+.comment-speak-going {
+  background-image: url("../images/disabuse/speak_going@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  height: 1.6rem;
+  width: 5.26rem;
+}
+.comment-speak-finish {
+  background-image: url("../images/disabuse/speak_finish@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  height: 1.6rem;
+  width: 5.26rem;
+}
+.comment-speak-resay {
+  background-image: url("../images/disabuse/speak_resay@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  height: 1.6rem;
+  width: 5.26rem;
+}
+
+.master-disabuse-more {
+  background-image: url("../images/icon/icon_dissabuse_detail@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 0.55rem;
+  width: 0.35rem;
+}
+.delete-icon {
+  background-image: url("../images/icon/icon_delete@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height:1.1rem;
+  width: 1.1rem;
+}
+
+.message-remark-icon{
+  background-image: url("../images/icon/reply@2x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.message-star-icon{
+  @extend .message-remark-icon;
+  background-image: url("../images/icon/dot2@2x.png");
+}
+
+.message-money-icon{
+  @extend .message-remark-icon;
+  background-image: url("../images/icon/money reward2@2x.png");
+}
+
+.right-arrow-icon{
+  background-image: url("../images/icon/next@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: .3rem .5rem;
+  height: .5rem;
+  width: .3rem;
+}
+.close-icon {
+  background-image: url("../images/icon/icon_close@3x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.reward-msg-icon{
+  background-image: url("../images/icon/wanted2@2x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1rem 1rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+// 头像测试
+.test-avatar-0{
+  background-image: url(../images/avatars/1.png);
+  border-radius: 50%;
+  background-position:center;
+}
+.test-avatar-1{
+  background-image: url(../images/avatars/2.png);
+}
+
+// calender
+.calender-ok{
+  background-image: url(../images/signed/ok.png);
+  width:.75rem;
+  height: .75rem;
+}
+.calender-miss{
+    background-image: url(../images/signed/miss.png);
+    width:.55rem;
+   height: .55rem;
+}
+.atten_ribbon {
+  background-image: url("/static/images/attendance/ribbon@3x.svg");
+  width: 2.65rem;
+  height: 0.6rem;
+}

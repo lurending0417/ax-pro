@@ -1,0 +1,93 @@
+@import "../constant.scss";
+
+
+.my .itemHeight {
+    height: 2.5rem;
+    font-size: 0.75rem;
+    .item-inner{
+        height: 2.5rem;
+    }
+}
+
+.my .my-user-info {
+    display: flex;
+    height: 4.5rem;
+    background: #FFF;
+    align-items: center;
+}
+
+.my .my-user-info .user-icon {
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    margin: 0 0.75rem;
+}
+
+.my .my-user-info .my-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.my .my-user-info .my-member {
+    font-size: 0.7rem;
+    margin-top: 0.25rem;
+    font-weight: bold;
+}
+
+.my .my-setting {
+    font-size: 0.75rem;
+    flex: 1;
+    text-align: right;
+    margin-right: 0.75rem;
+    line-height:1.5rem;
+    .icon.icon-right{
+        margin-left:.55rem;
+        color:$fs-color-gray;
+    }
+}
+
+.my .my-setting .icon-next {
+    width: 0.35rem;
+    height: 0.7rem;
+    margin-left: 0.55rem;
+    margin-top:-2px;
+}
+
+.my .my-wallet-invite-box {
+    height: 4rem;
+    background: #FFF;
+}
+
+.my .my-wallet-invite-box img {
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.my .my-wallet-invite-box .my-wallet-text, .my-invite-text {
+    font-size: 0.7rem;
+}
+
+.my .my-wallet-invite-box .my-wallet-box, .my-invite-box {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my .item-content .item-inner {
+    background-image: none !important;
+}
+
+.my .item-content .item-media img {
+    width: 1.35rem;
+    height: 1.35rem;
+}
+
+.my .list {
+    margin: 0;
+}
+
+.my .list ul {
+    border-top: none;
+}

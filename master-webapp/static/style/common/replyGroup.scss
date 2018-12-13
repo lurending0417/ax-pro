@@ -1,0 +1,35 @@
+.rg_content {
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-top: 0.05rem solid #E0E0E0;
+  justify-content: space-between;
+  background-color: white;
+}
+.rg_reply {
+  white-space: nowrap;
+  height: 1.5rem;
+  border-radius: 0.75rem;
+  border: 0.05rem solid #E0E0E0;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  flex: 1;
+  margin-right: 0.75rem;
+}
+.rg_share {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.rg_share_txt {
+  color: #6176A0 !important;
+  margin-left: 0.25rem;
+}
+.rg_dot_txt {
+  margin-left: 0.25rem;
+}

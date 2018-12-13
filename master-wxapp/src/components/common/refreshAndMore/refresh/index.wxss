@@ -1,0 +1,21 @@
+.pull-to-refresh-layer {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 20rem;
+    height: 2.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .5rem;
+}
+
+.fs-small {
+    font-size: .7rem;
+}
+
+.fs-gray {
+    color: #9B9B9B !important;
+}

@@ -1,0 +1,6 @@
+<view class='avatar-warp'>
+	<view class='avatar-img'>
+		<image class='avatar' src='{{src}}'></image>
+	</view> 
+	<image wx:if='{{isVip}}' class='vip-icon' src='/assets/imgs/icon/icon_medal@2x.png'></image>
+</view>

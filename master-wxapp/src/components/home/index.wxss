@@ -1,0 +1,17 @@
+.h_header {
+    height: 1.5rem;
+    padding: 0rem 0.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.h_header_title {
+    font-size: 0.85rem;
+    color: #CF9F41;
+}
+
+.h_header_detail {
+    font-size: 0.7rem;
+    color: #9B9B9B;
+}

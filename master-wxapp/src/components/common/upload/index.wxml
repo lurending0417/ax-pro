@@ -1,0 +1,11 @@
+<!-- logs.wxml -->
+<picker mode="selector" range="{{selects}}" bind:change="onPickerSel">
+  <view>
+    <view wx:if="{{selPic.length}}" wx:for="{{selPic}}" wx:for-item="item" style="margin-right:10px;" class="pic-upload">
+      <image src="{{item}}" />
+    </view>
+    <view class="pic-upload">
+      <text class="pic-upload-img">+</text>
+    </view>
+  </view>
+</picker>

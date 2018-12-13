@@ -1,0 +1,43 @@
+<!-- item -->
+<view class="item">
+    <view class="item_top">
+        <user-info info="{{info}}"></user-info>
+        <view class="item_top_other">
+            <text class="item_top_focus" hidden="{{status !== 'MASTER'}}">{{info.followTimes ? info.followTimes : 0}}人关注</text>
+            <text class="item_listen_btn" hidden="{{status !== 'ANSWER'}}">偷看￥{{info.listenCost}}</text>
+            <text class="item_reward_price" hidden="{{status !== 'REWARD'}}">奖金￥{{info.bounty}}</text>
+            <text class="item_reward_time" hidden="{{status !== 'REWARD'}}">{{info.closed ? '奖金已发放' : '奖金将在{getLeftTime(info.closeTime)}发放'}}</text>
+        </view>
+    </view>
+    <view class="item_middle">
+        <text class="item_middle_txt" hidden="{{status !== 'MASTER'}}">{{info.intro}}</text>
+        <image class="item_middle_arrow" src="{{arrowIcon}}" hidden="{{status !== 'MASTER'}}"></image>
+        <text class="item_middle_txt" hidden="{{status !== 'ANSWER'}}">{{info.content}}</text>
+        <view class="item_reward_question" hidden="{{status !== 'REWARD'}}">
+            <view class="item_reward_question_content">
+                <text class="item_reward_question_title">问题:</text>
+                <text class="item_reward_question_txt">{{info.content}}</text>
+            </view>
+            <image class="item_reward_question_img" hidden="{{info.attaches.count === 0}}" src="{{info.attaches.count > 0 ? info.attaches[0].path : ''}}"></image>
+        </view>
+        <view class="item_reward_question" hidden="{{status !== 'REWARD'}}">
+            <text class="item_reward_answer_title">目前最佳答案:</text>
+            <text class="item_reward_answer_txt">{{info.answer}}</text>
+        </view>
+    </view>
+    <view class="item_bottom" hidden="{{status === 'MASTER' && info.tags.count === 0}}">
+        <view class="item_tags" hidden="{{status !== 'MASTER'}}">
+            <block wx:for="{{info.tags}}">
+                <text class="item_tag">{{"#" + item}}</text>
+            </block>
+        </view>
+        <view class="item_listen" hidden="{{status !== 'ANSWER'}}">
+            <text class="item_listen_txt">{{info.listenTimes}}已偷看</text>
+            <image class="item_listen_icon"></image>
+        </view>
+        <view class="item_listen" hidden="{{status !== 'REWARD'}}">
+            <text class="item_listen_txt">查看全部{{info.replyTimes}}个答案</text>
+            <image class="item_listen_icon"></image>
+        </view>
+    </view>
+</view>

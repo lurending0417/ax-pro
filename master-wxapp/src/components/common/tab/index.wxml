@@ -1,0 +1,8 @@
+<view class="p-headers bar color-black bar-nav cat-header">
+  <view class="buttons-tab">
+    <view wx:key="index" wx:for="{{headers}}" wx:for-index="index" bind:tap="onChange" data-index="{{index}}" wx:for-item="item" class="tab-link button {{currentIndex==index?'active':''}}">
+      <text class="">{{keyfield?item[keyfield]:item}}</text>
+      <view></view>
+    </view>
+  </view>
+</view>

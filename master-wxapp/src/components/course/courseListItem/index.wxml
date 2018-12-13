@@ -1,0 +1,12 @@
+<view bind:tap="onTap" bind:touchstart="touchstart" bind:touchend="touchend" class="course-list-item  home-course-box">
+  <course style="width:100%;overflow:hidden;border-radius:.5rem;" time="{{store.duration}}" bind:tap="onTap" tag="{{store.discountType}}" src="{{store.banner}}" />
+  <view class="course-title">
+    <text class="title">{{store.title}}</text>
+    <text class="price">{{priceLabel}}</text>
+  </view>
+  <text class="fs-small fs-bold fs-line2 intro">{{intro}}</text>
+  <view class="course-fav" wx:if="{{store.students.length}}">
+    <image class="avator-small" src="{{student}}" wx:for-index="index" wx:key="index" wx:for-item="student" wx:for="{{avatars}}" />
+    <text style="margin-left:.7rem;" class="fs-small">等{{store.studentCount}}人已学习</text>
+  </view>
+</view>

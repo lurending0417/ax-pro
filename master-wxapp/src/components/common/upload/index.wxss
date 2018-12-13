@@ -1,0 +1,20 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.pic-upload{
+width:60px;
+height:60px;
+background:#cecdce;
+text-align:center;
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+.pic-upload-img{
+  font-size: 30px;
+  font-weight: bold;
+  color:black;
+}

@@ -1,0 +1,9 @@
+<!-- logs.wxml -->
+<view class="container">
+  <van-cell-group>
+    <block wx:for="{{fields}}" wx:for-item="field">
+      <van-field data-key="{{field.dataIndex}}" bind:change="onChange" clearable label="{{field.label}}" icon="question" placeholder="请输入{{field.label}}"></van-field>
+    </block>
+  </van-cell-group>
+  <button class="btn" type="primary" bindtap="submit">登录</button>
+</view>

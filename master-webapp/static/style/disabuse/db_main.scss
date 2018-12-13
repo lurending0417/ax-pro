@@ -1,0 +1,134 @@
+@import "../common";
+.ms_content {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+}
+
+.ms_head {
+  height: 1.6rem;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+      margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.ms_head_btn {
+  width: 5.5rem;
+  height: 1.6rem;
+  border-radius: 0.2rem;
+  background-color: #CF9F41;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 0.75rem;
+  color: white;
+}
+
+.ms_item {
+  margin-bottom: 0.5rem;
+  min-height: 2.6rem;
+  background-color: white;
+}
+.ms_question_item {
+  //min-height: 2.6rem;
+  background-color: white;
+  background-color: #FCFCFC;
+  padding:0.5 .5rem .15rem;
+  margin-bottom: .5rem;
+}
+.ms_question_footer {
+  padding-top: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ms_question_header {
+  padding-bottom: .75rem;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  //padding-left: 0.75rem;
+  align-items: center;
+  position: relative;
+}
+.ms_card_item {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  min-height: 2.6rem;
+  flex-direction: column;
+  background-color: #FCFCFC;
+}
+
+.ms_item_header {
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  //padding-left: 0.75rem;
+  align-items: center;
+  position: relative;
+}
+.ms_item_header_icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 1.25rem;
+  background-color: gray;
+}
+.ms_item_header_icon .logo {
+  margin-left: 1.7rem;
+  margin-top: 1.7rem;
+}
+.ms_item_header_right_title {
+  color: #2B2B2E;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+.ms_item_header_right_icon {
+
+}
+.ms_item_header_right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+}
+
+.ms_item_content {
+  color: #2B2B2E;
+}
+.ms_item_footer {
+  padding-top: 0.25rem;
+  // padding-bottom: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.ms_item_footer_tip {
+  color: #9B9B9B;
+  padding-right: 0.5rem;
+}
+.ms_item_footer_right {
+  margin-right: 0;
+  margin-left: auto;
+}
+.ms_item_footer_left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.ms_list {
+  position: absolute;
+  top: 100;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.ms_full {
+  width: 100%;
+  padding:.75rem !important;
+}

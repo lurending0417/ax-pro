@@ -1,0 +1,29 @@
+.cm_content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.25rem;
+}
+.cm_detail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.cm_tip {
+  color: #6176A0;
+  margin-left: 0.1rem;
+}
+.cm_between {
+  margin-left: 0.65rem;
+}
+.record-time{
+  width:4rem;
+  height: 4rem;
+  background: #2B2B2E;
+  border-radius: .45rem;
+  color:#fff;
+  font-size:1rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4rem;
+}

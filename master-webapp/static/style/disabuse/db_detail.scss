@@ -1,0 +1,57 @@
+.dd_container {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  right: 0rem;
+  bottom: 0rem;
+  display: flex;
+  flex-direction: column;
+}
+.dd_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  //margin-bottom: 2.5rem;
+  flex: 1;
+}
+.dd_scroll {
+  overflow: auto;
+}
+.dd_collection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: auto;
+  // margin-right: 0.75rem;
+}
+.dd_collection_txt {
+  color: #9B9B9B;
+  margin: 0rem;
+}
+
+.dd_btn {
+  background-color: #CF9F41;
+  height: 1.6rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0.5rem;
+  align-items: center;
+}
+.dd_voice_icon {
+  height: 1rem;
+  width: 1rem;
+}
+.dd_voice_txt {
+  margin-left: 0.2rem;
+  color: white;
+}
+.dd_top {
+  margin-top: 0.5rem;
+}
+.dd_voice_tip {
+  color: #9B9B9B;
+  margin-top:.45rem;
+  margin-bottom: 0;
+}

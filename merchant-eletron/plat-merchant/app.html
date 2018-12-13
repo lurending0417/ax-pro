@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html my="app" {{ HTML_ATTRS }}>
+<head>
+    {{ HEAD }}
+</head>
+<body {{ BODY_ATTRS }} style="background: #efefef">
+{{ APP }}
+<div id="customArea"></div>
+</body>
+    <script>
+        const electron = require('electron')
+        const ipcRenderer = electron.ipcRenderer
+        ipcRenderer.send('checkForUpdate');
+        console.log('============')
+        ipcRenderer.on('message', (event, text) => {
+            // console.log(arguments);
+            console.log('22222')
+            console.log(text);
+            this.tips = text;
+        });
+        ipcRenderer.on('downloadProgress', (event, progressObj) => {
+            console.log('progress')
+            console.log(progressObj);
+            this.downloadPercent = progressObj.percent || 0;
+        });
+        ipcRenderer.on('isUpdateNow', () => {
+            console.log('uppppppppp')
+            let flag = confirm('有新的版本，是否立即更新？ 关闭后将自动更新');
+            if (flag) {
+                ipcRenderer.send('isUpdateNow');
+            }
+        })
+    </script>
+</html>

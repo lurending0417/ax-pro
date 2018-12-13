@@ -1,0 +1,33 @@
+<!-- logs.wxml -->
+<view>
+  <van-cell-group>
+    <block wx:key="dataIndex" wx:for="{{fields}}" wx:for-item="field">
+      <van-cell wx:if="{{field.type=='date'}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}">
+        <picker disabled="{{!!field.disabled}}" data-key="{{field.dataIndex}}" mode="date" value="{{values[field.dataIndex]}}" start="1970-01-01" end="2018-09-01" bindchange="onChange">
+          <view class="picker-label">{{field.label}}</view>
+          <view class="picker-input">{{values[field.dataIndex]}}</view>
+        </picker>
+      </van-cell>
+      <van-cell wx:elif="{{field.type=='upload'}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}">
+        <view class="picker-label">{{field.label}}</view>
+        <pic-upload disabled="{{!!field.disabled}}" bind:change="onChange" data-key="{{field.dataIndex}}" class="picker-input" />
+      </van-cell>
+      <van-cell wx:elif="{{field.type=='switch'}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}">
+        <view class="picker-label">{{field.label}}</view>
+        <switch disabled="{{!!field.disabled}}" class="picker-input" data-key="{{field.dataIndex}}" checked bindchange="onChange" />
+      </van-cell>
+      <van-cell wx:elif="{{field.type=='radio'}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}">
+        <view class="picker-label">{{field.label}}</view>
+        <radio-group class="picker-input  radio-group" data-key="{{field.dataIndex}}" bindchange="onChange">
+          <label class="radio" wx:for="{{field.data}}" wx:for-item="ritem">
+            <radio disabled="{{!!field.disabled}}" value="{{ritem.value}}" checked="{{ritem.value==values[field.dataIndex]}}" />
+            {{ritem.text}}
+          </label>
+        </radio-group>
+      </van-cell>
+      <verify-code wx:elif="{{field.type=='code'}}" bind:change="onChange" data-key="{{field.dataIndex}}" clearable label="{{field.label}}" required="{{!!field.required}}"></verify-code>
+      <van-field disabled="{{!!field.disabled}}" wx:else bind:change="onChange" value="{{values[field.dataIndex]}}" data-key="{{field.dataIndex}}" clearable label="{{field.label}}" required="{{!!field.required}}" placeholder="请输入{{field.label}}"></van-field>
+    </block>
+  </van-cell-group>
+  <button wx:if="{{saveText}}" class="form-btn" type="primary" bindtap="submit">{{saveText}}</button>
+</view>

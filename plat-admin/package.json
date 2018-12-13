@@ -1,0 +1,34 @@
+{
+    "name": "plat-admin",
+    "version": "1.0.0",
+    "private": true,
+    "config": {
+        "nuxt": {
+            "host": "0.0.0.0",
+            "port": "3000"
+        }
+    },
+    "scripts": {
+        "dev": "cross-env NODE_ENV=dev nuxt",
+        "build-test": "cross-env NODE_ENV=test nuxt build",
+        "start-test": "cross-env NODE_ENV=test nuxt start",
+        "build-prod": "cross-env NODE_ENV=production nuxt build",
+        "start-prod": "cross-env NODE_ENV=production nuxt start"
+    },
+    "dependencies": {
+        "axios": "^0.18.0",
+        "china-area-data": "^4.0.0",
+        "element-ui": "^2.4.0",
+        "lodash": "^4.17.10",
+        "moment": "^2.22.2",
+        "nuxt": "^1.4.1"
+    },
+    "devDependencies": {
+        "babel-eslint": "^8.2.5",
+        "cross-env": "^5.2.0",
+        "eslint": "^4.19.1",
+        "eslint-friendly-formatter": "^3.0.0",
+        "eslint-loader": "^1.7.1",
+        "eslint-plugin-vue": "^4.5.0"
+    }
+}

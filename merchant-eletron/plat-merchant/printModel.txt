@@ -1,0 +1,293 @@
+<html>
+    <head>
+        <style>
+            * {
+                font-size: 10px;
+                font-family: Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial, sans-serif;
+            }
+
+            h2 {
+                text-align: right;
+                font-size: 24px;
+                margin-right: 150px;
+            }
+
+            div {
+                margin-top: 10px;
+            }
+
+            hr {
+                margin-bottom: 10px;
+                line-height: 4px;
+            }
+
+            table {
+                width: 100%;
+                border: 0;
+                margin: 0;
+                border-collapse: collapse;
+                border-spacing: 0;
+            }
+
+            th, td {
+                padding: 0;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .m-r {
+                margin-right: 40px;
+            }
+
+        </style>
+    </head>
+    <body>
+        {{? it.tranType === 'RECYCLE_IN' }}
+            <h2>回收单</h2>
+        {{?? it.tranType === 'RETAIL_REJECT'}}
+            <h2>退款单</h2>
+        {{??}}
+            {{? it.exchangeBill}}
+                <h2>置换单</h2>
+            {{??}}
+                <h2>缴款单</h2>
+            {{?}}
+        {{?}}
+        <table>
+            <tr>
+                <td>门店：{{!it.tranBill.storeName}}</td>
+                <td>柜组：{{!it.tranBill.wareHouseId}}</td>
+                <td>日期：{{!it.tranBill.createTime}}</td>
+                <td>单号：{{!it.payment.billNumber}}</td>
+            </tr>
+        </table>
+        <hr/>
+        <table>
+            <tr>
+                {{? it.tranType === 'RECYCLE_IN'}}
+                    <td>兑换单号</td>
+                    <td>来料名称</td>
+                    <td>单价</td>
+                    <td>毛重</td>
+                    <td>净重</td>
+                    <td>工费单价</td>
+                    <td>工费总额</td>
+                    <td>扣费</td>
+                    <td>回收金额</td>
+                {{??}}
+                    <td>商品条码</td>
+                    <td>商品名称</td>
+                    <td>总质量</td>
+                    {{? it.isMetailPrice > 0}}
+                        <td>金价</td>
+                    {{?}}
+                    {{? it.isProcess > 0}}
+                        <td>工费单价</td>
+                        <td>工费总额</td>
+                    {{?}}
+                    {{? it.isMainGem > 0}}
+                        <td>主石</td>
+                    {{?}}
+                    {{? it.isColor > 0}}
+                        <td>色级</td>
+                    {{?}}
+                    {{? it.isPure > 0}}
+                        <td>净度</td>
+                    {{?}}
+                    {{? it.isCert > 0}}
+                        <td>证书</td>
+                    {{?}}
+                    {{? it.isAmount > 0}}
+                        <td>数量</td>
+                    {{?}}
+                    <td>原价</td>
+                    {{? it.isBargain > 0}}
+                        <td>特惠价</td>
+                    {{?}}
+                    <td>优惠</td>
+                    <td>应收</td>
+                {{?}}
+            </tr>
+            {{~ it.tranItems : item : itemIndex }}
+            <tr>
+                {{? it.tranType === 'RECYCLE_IN'}}
+                    <td>{{!item.serial}}</td>
+                    <td>{{!item.metalId}}</td>
+                    <td>￥{{! item.metalPrice}}/{{!item.weightUnit}}</td>
+                    <td>{{!item.roughWeight + item.weightUnit}}</td>
+                    <td>{{!item.netWeight + item.weightUnit}}</td>
+                    <td>￥{{=item.processingCharges}}/g</td>
+                    <td>￥{{= item.computedProcessingCharges}}</td>
+                    <td>￥{{=item.forfeit}}</td>
+                    <td>￥{{=item.totalCost}}</td>
+                {{??}}
+                    <td>{{!item.serial}}</td>
+                    <td>{{= item.metalId ?  item.metalName : ''}}{{= item.gemName ? item.gemId : ''}}{{= item.categoryId ? item.categoryName : ''}}</td>
+                    <td>{{= item.weight + item.weightUnit}}</td>
+                    {{? it.isMetailPrice > 0}}
+                        {{? item.priceType === '按重计算'}}
+                            <td>￥{{= item.metalPrice}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    {{? it.isProcess > 0}}
+                        {{? item.processingCharges > 0}}
+                            <td>￥{{= item.processingCharges}}/g</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                        {{? item.computedProcessingCharges > 0}}
+                            <td>￥{{= item.computedProcessingCharges}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    {{? it.isMainGem > 0}}
+                        {{? item.mainGemWeight > 0}}
+                            <td>{{= item.mainGemWeight}}ct/{{= item.mainGemAmount}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    {{? it.isColor > 0}}
+                        {{? item.propColor}}
+                            <td>{{= item.propColor}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    {{? it.isPure > 0}}
+                        {{? item.propPure}}
+                            <td>{{= item.propPure}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    {{? it.isCert > 0}}
+                        {{? item.propCert}}
+                            <td>{{= item.propCert}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    {{? it.isAmount > 0}}
+                        <td>item.amount</td>
+                    {{?}}
+                    {{? item.regularPrice && item.regularPrice !=='/'}}
+                        <td>￥{{=item.regularPrice}}</td>
+                    {{??}}
+                        <td>￥{{=item.retailPrice}}</td>
+                    {{?}}
+                    {{? it.isBargain > 0}}
+                        {{? item.retailPrice > 0}}
+                            <td>￥{{= item.retailPrice}}</td>
+                        {{??}}
+                            <td>/</td>
+                        {{?}}
+                    {{?}}
+                    <td>￥{{=item.totalDiscount}}</td>
+                    <td>￥{{=item.totalCost}}</td>
+                {{?}}
+            </tr>
+            {{~}}
+        </table>
+        {{? it.exchangeBill }}
+        <hr/>
+        <table>
+            <tr>
+                <td>兑换单号</td>
+                <td>来料名称</td>
+                <td>单价</td>
+                <td>毛重</td>
+                <td>净重</td>
+                <td>来料金额</td>
+                <td>工费单价</td>
+                <td>工费总额</td>
+                <td>扣费</td>
+                <td>抵扣金额</td>
+            </tr>
+            {{~ it.exchangeItems : item : index}}
+            <tr>
+                <td>{{!item.serial}}</td>
+                <td>{{!item.metalName}}</td>
+                <td>￥{{! item.metalPrice}}/{{!item.weightUnit}}</td>
+                <td>{{!item.roughWeight + item.weightUnit}}</td>
+                <td>{{!item.netWeight + item.weightUnit}}</td>
+                {{? item.originalPrice > 0}}
+                    <td>￥{{=item.originalPrice}}</td>
+                {{??}}
+                    <td>￥0</td>
+                {{?}}
+                {{? item.processingCharges > 0}}
+                    <td>￥{{=item.processingCharges}}/g</td>
+                {{??}}
+                    <td>￥0</td>
+                {{?}}
+                {{? item.computedProcessingCharges > 0}}
+                    <td>￥{{= item.computedProcessingCharges}}</td>
+                {{??}}
+                    <td>￥0</td>
+                {{?}}
+                <td>￥{{=item.forfeit}}</td>
+                {{? item.totalCost > 0}}
+                    <td>￥{{=item.totalCost}}</td>
+                {{??}}
+                    <td>￥0</td>
+                {{?}}
+
+            </tr>
+            {{~}}
+        </table>
+        {{?}}
+        <hr>
+        <div>
+            <span>合计：共{{!it.tranBill.amount}}件，</span>
+            {{? it.tranBill.weight}}
+            <span>重量：{{!it.tranBill.weight}}g，</span>
+            {{?}}
+            {{? it.tranBill.originalCost}}
+                <span>原价：￥{{=it.tranBill.originalCost}},</span>
+            {{?}}
+            {{? it.exchangeBill }}
+            <span>抵扣金额：￥{{=it.tranBill.exchangeCost}}</span>
+            {{?}}
+            {{? it.tranBill.discountCost}}
+            <span>优惠金额：￥{{=it.tranBill.discountCost}}，</span>
+            {{?}}
+            {{? it.tranType === 'RECYCLE_IN' }}
+                <span>实际支付金额：￥{{=it.payment.totalCost}}</span>
+            {{??}}
+                <span>实收金额：￥{{=it.payment.totalCost}}</span>
+            {{?}}
+        </div>
+        <hr/>
+        <div>
+            {{? it.payment.paymentOfCash !== 0}}
+            <span class="m-r">现金：{{=it.payment.paymentOfCash}}</span>
+            {{?}}
+            {{? it.payment.paymentOfPos !== 0}}
+            <span class="m-r">POS：{{=it.payment.paymentOfPos }}</span>
+            {{?}}
+            {{? it.payment.paymentOfGold !== 0}}
+            <span class="m-r">黄金抵扣：{{=it.payment.paymentOfGold}}</span>
+            {{?}}
+            {{? it.payment.paymentOfWeixin !== 0}}
+            <span class="m-r">微信：{{=it.payment.paymentOfWeixin}}</span>
+            {{?}}
+            {{? it.payment.paymentOfAlipay !== 0}}
+            <span class="m-r">支付宝：{{=it.payment.paymentOfAlipay}}</span>
+            {{?}}
+            {{? it.payment.cashOddChange !== 0}}
+            <span class="m-r">找零：{{=it.payment.cashOddChange}}</span>
+            {{?}}
+        </div>
+        <hr/>
+        <div>
+            <span>收银员：{{!it.payment.creatorId}}</span>
+            <span style="margin-left:50px;">营业员：{{!it.tranBill.salesmanId}}</span>
+        </div>
+    </body>
+</html>

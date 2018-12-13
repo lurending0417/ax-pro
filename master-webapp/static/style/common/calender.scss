@@ -1,0 +1,231 @@
+@import "../constant.scss";
+
+.calender{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    font-size: .7rem;
+    width:100%;
+    
+    padding:0.35rem .45rem .75rem;
+    color:$fs-color-bold;
+    border-bottom-left-radius: .55rem;
+    border-bottom-right-radius: .55rem;
+    .calender-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        .calender-td{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex:1;
+            position: relative;
+        }
+    }
+    .calender-row-title{
+        font-weight: bold;
+        color:$fs-color-bold;
+        height: 1.7rem;
+        
+    }
+    .calender-row-body{
+        height: 1.5rem;
+    }
+    .calender-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height:1.7rem;
+        padding:0 10%;
+        .icon{
+            color:#663305
+        }
+        .calender-title{
+            flex:1;
+            text-align: center;
+            font-size: .8rem;
+            font-weight: bold;
+        }
+    }
+
+}
+
+.signed-miss{
+   
+    width:80%;
+    border-radius: .5rem;
+    padding:.75rem;
+    background: #fff;
+    h3{
+
+    }
+    p{
+    margin-top: 1.15rem;
+    font-size: .7rem;
+    margin-bottom: 1.25rem;
+    color:$fs-color-bold;
+    }
+    a{
+
+    }
+
+}
+
+.signed-calender{
+     z-index: 3;
+    margin-top:-1.5rem;
+    position: relative;
+    height: 24.15rem;
+    padding-top:.5rem;
+    width:100%;
+    overflow: hidden;
+    position: relative;
+    .calender{
+        padding-left:0;
+        padding-right:0;
+    }
+    .signed-hide-btn{
+        position: absolute;
+        top:1rem;
+        width:45%;
+        height: 4.5rem;
+        opacity: 1;
+        background: transparent;
+        z-index: 8;
+    }
+    .signed-left{
+        left:0;
+    }
+    .signed-right{
+        right:0;
+    }
+    .calender-ok{
+        // margin-left:-.2rem;
+    }
+    .signed-tip{
+        position: absolute;
+        top: 2.2rem;
+        right: .75rem;
+        background: #fff;
+        padding: .25rem .75rem;
+        border-radius: .5rem;
+        font-weight: bold;
+        font-size: .6rem;
+        z-index: 9;
+    }
+    .p-headers{
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+        overflow: hidden;
+        
+        .buttons-tab{
+            background: #FF8205;
+            border-bottom-width: 0;
+             a.button{
+                 font-weight: bold;
+                 span:first-child{
+                     margin-top:0;
+                 }
+                span:last-child{
+                    display: none;
+                }
+                span{
+                    color:#fff;
+                    font-size: .75rem;
+                }
+             }
+            a.button.active{
+                span{
+                    color:#663305;
+                    background: #FFE6CD;
+                    border-radius: 1.25rem;
+                    padding: .25rem .5rem;
+                }
+            }
+
+        }
+        .content-block{
+            margin:0;
+            padding:0;
+            background: #fff;
+            min-height: 11.5rem;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+        }
+    }
+    .signed-calender-bg{
+        width:180%;
+        margin-left:-45%;
+        transition: all 1.5s;
+        transform: rotate(-45deg);
+        img{
+            width:100%;
+            height: auto;
+        }
+    }
+    .signed-calender-bg-lottery{
+        transform: rotate(45deg)
+    }
+    .signed-calender-body{
+        padding: 4rem .75rem 0;
+        position: absolute;
+        left:0;
+        width:100%;
+        top:1rem;
+    }
+    .signed-calender-rules{
+        padding:.75rem;
+        p{
+            color:$fs-color-bold;
+            font-size: .7rem;
+            line-height: 1rem;
+            margin-block-start:0;
+            margin-block-end:0;
+            margin: 0;
+
+        }
+    }
+    .signed-calender-frends{
+        h3{
+            font-size: .8rem;
+            color:$fs-color-bold;
+            text-align: center;
+            padding: .45rem;
+        }
+        img{
+
+        }
+        .signed-calender-frends-imgs{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items:center;
+        }
+    }
+    .calender-td>span{
+        // position: relative;
+        .imgBg{
+            display: block;
+            // position: absolute;
+            // top: .25rem;
+            // left: .05rem;
+        }
+    }
+    .badge{
+        background: #D0021B;
+        white-space: nowrap;
+        position: absolute;
+        top:-.7rem;
+        left:-.1rem;
+        border-radius: 1.25rem;
+        padding:0.2rem 0.35rem .15rem;
+        transform: scale(.8);
+        color:#fff;
+    }
+}

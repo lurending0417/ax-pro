@@ -1,0 +1,5 @@
+<!-- logs.wxml -->
+<view class="container">
+  <easy-form  saveHandler="{{true}}" bind:savepre="savepre" bind:saved="saved" fields="{{fields}}" api="" saveText="保存" />
+  <van-toast id="van-toast" />
+</view>

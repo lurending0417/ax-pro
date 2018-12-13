@@ -1,0 +1,47 @@
+.dp_content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.dp_star_content {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  margin-top: 0.75rem;
+}
+.dp_btn_content {
+  @extend .dp_star_content;
+  justify-content: center;
+  margin-bottom: 0.75rem;
+}
+
+.dp_star {
+  height: 0.7rem;
+  width: 0.7rem;
+  margin-right: 0.2rem;
+}
+.dp_star_txt {
+  color: #D0021B;
+  text-align: center;
+}
+
+.dp_btn_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dp_btn_item_right {
+  @extend .dp_btn_item;
+  margin-left: 2rem;
+}
+
+.dp_btn_item_txt {
+  color: #9B9B9B;
+  margin-top: 0.35rem;
+}
+
+
+
+

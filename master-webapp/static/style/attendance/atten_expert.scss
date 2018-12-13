@@ -1,0 +1,122 @@
+.aet_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80%;
+  background-color: white;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  display: flex;
+  flex-direaction: column;
+}
+.aet_bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FCB01D;
+  height: 3.5rem;
+}
+.aec_img {
+  width: 13rem;
+}
+.aec_delete {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  z-index: 1000;
+
+}
+.aec_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -1.5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.aec_content {
+  margin-top: 1.75rem;
+  margin-right: 0;
+  margin-right: 0;
+  margin-bottom: 3.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+}
+.aec_title {
+  width: 100%;
+  display: flex;
+  font-size: 0.6rem;
+  justify-content: center;
+  align-items: center;
+  color: #2B2B2E;
+  padding: 0.5rem;
+  border-bottom: 0.05rem solid rgba(231, 231, 231, 0.5);
+}
+.aec_scroll {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.aec_item {
+  height: 3rem;
+  display: flex;
+  flex-direaction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.75rem;
+  border-bottom: 0.05rem solid rgba(231, 231, 231, 0.5);
+}
+.aec_item_count {
+  height: 0.85rem;
+  width: 0.85rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aec_item_icon {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 1rem;
+  background-color: #9B9B9B;
+}
+.aec_item_name {
+  width: 5rem;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.aec_item_price {
+  color: #DD485A;
+}
+.aec_line {
+  height: 0.05rem;
+  width: 100%;
+  background-color: #D5D5D5;
+}
+.aec_item_img {
+  width: 1rem;
+  height: 1.3rem;
+}
+.aec_item_cup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aec_item_cup_img {
+  width: 1.15rem;
+  height: 1.15rem;
+}

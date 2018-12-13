@@ -1,0 +1,2 @@
+<!--components/writeItem/index.wxml-->
+<text bindtap='edit' bindlongtap='del' class="{{borded?'red':''}}">{{text}},</text>

@@ -1,0 +1,93 @@
+.group-course.home-course-box{
+    margin-top:0;
+    .home-course-banner{
+        margin-top:0;
+    }
+}
+.group-course {
+    color: #2B2B2E;
+
+    .list-block{
+        margin-top:.75rem;
+    }
+
+    .p-headers .buttons-tab{
+        border-width:0;
+        a span:first-child{
+            font-weight: bold;
+        }
+    }
+    .group-course-title {
+        display: flex;
+        margin: 1.25rem 0 0.75rem;
+        font-size: 0.85rem;
+        font-weight: bold;
+    }
+
+    .intro-info {
+        font-size: 0.75rem;
+        border-bottom: 1px solid #E7E7E7;
+        padding-bottom: 0.5rem;
+    }
+
+    .course-item-bottom-border {
+        border-bottom: 1px solid #E7E7E7;
+        margin-bottom: 0.75rem;
+    }
+    .course-item-bottom-border:last-child{
+        border-bottom: 0;
+    }
+
+    .course-item-box {
+        font-size: 0.75rem;
+
+        .item-title{
+            padding:0.25rem 0;
+            .icon{
+                margin:-.45rem 0 0 .25rem;
+                display: inline-block;
+                vertical-align: middle;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 100% auto;
+            }
+            span{
+                -webkit-text-stroke-width: 0;
+                margin-left:.25rem;
+            }
+        }
+
+        .course-info {
+            margin-top: 0.25rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: .75rem;
+            padding:0;
+
+            .course-img {
+                width: 4.25rem;
+                height: 4.25rem;
+                border-radius: 0.45rem;
+            }
+            .course-item-right {
+                display: inline-block;
+                margin-left: 0.5rem;
+                flex:1;
+                div {
+                    height: 2.1rem;
+                    font-size: .72rem;
+                }
+                .course-item-top {
+                    font-weight: bold;
+                    font-size: .8rem;
+                    // width: 12.25rem;
+                    overflow: hidden;
+                }
+                .course-item-bottom {
+                    color: #9B9B9B;
+                    // width: 12.25rem;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

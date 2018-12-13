@@ -1,0 +1,17 @@
+<!--components/dialog/dialog.wxml-->
+<view class="wx-dialog" style="display:{{visible?'flex':'none'}}">
+  <view class='wx-modal'></view>
+  <view class='wx-content'>
+    <block wx:if="{{!!text}}">
+      <text class="txt">{{text}}</text>
+    </block>
+    <block wx:else>
+      <slot></slot>
+    </block>
+    <view class='wx-footer'>
+        <button bindtap='cancel'  class='wx-cancel'>取消</button>
+        <button bindtap='confirm' class='wx-confirm'>确定</button>
+    </view>
+  </view>
+    
+</view>
